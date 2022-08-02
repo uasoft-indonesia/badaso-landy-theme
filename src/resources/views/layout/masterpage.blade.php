@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="col-span-6">
-                    <a href=""><img src="https://api.lorem.space/image/movie"
+                    <a href=""><img src="https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg"
                             class="rounded-lg w-[636px] h-[509px]" alt="Shoes" /></a>
 
                 </div>
