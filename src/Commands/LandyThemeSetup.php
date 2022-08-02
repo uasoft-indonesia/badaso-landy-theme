@@ -70,13 +70,12 @@ class LandyThemeSetup extends Command
                 <<<'EOT'
 
         // BadasoLandyTheme
-        const path = require('path');
-        mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
-             .postCss('vendor/badaso/landy-theme/src/resources/app/assets/css/style.css', 'public/css/landy-theme.css', [require('tailwindcss')])
-            .alias({
-                '@': path.join(__dirname, 'vendor/badaso')
-            })
-
+             mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
+        .css("vendor/badaso/landy-theme/src/resources/js/assets/css/style.css","public/css/landy-theme.css",{},[
+        require("tailwindcss"),
+        require("autoprefixer"),
+        ]
+        )
         EOT;
 
             $this->file->append($mix_file, $data);
@@ -138,7 +137,7 @@ class LandyThemeSetup extends Command
         $decoded_json['dependencies']['daisyui'] = '^2.13.6';
         $decoded_json['dependencies']['alpinejs'] = '^3.10.2';
 
-        $decoded_json['devDependencies']['tailwindcss'] = '^3.0.23';
+        $decoded_json['dependencies']['tailwindcss'] = '^3.0.23';
         $decoded_json['devDependencies']['postcss'] = '^8.1.14';
 
         $encoded_json = json_encode($decoded_json, JSON_PRETTY_PRINT);

@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "name": "badaso/landy-theme",
+    "description": "Official theme for landy system on badaso",
+    "keywords": [
+        "laravel",
+        "admin",
+        "panel",
+        "dashboard",
+        "pwa",
+        "generator",
+        "blog",
+        "badaso",
+        "news"
+    ],
+    "license": "proprietary",
+    "homepage": "https://badaso.uatech.co.id/",
+    "support": {
+        "issues": "https://github.com/uasoft-indonesia/badaso-landy-theme/issues",
+        "discussion": "https://github.com/uasoft-indonesia/badaso-landy-theme/discussions",
+        "source": "https://github.com/uasoft-indonesia/badaso-landy-theme"
+    },
+    "type": "library",
+    "require": {
+        "symfony/var-exporter": "*",
+        "badaso/content-module": "*",
+        "badaso/core": "^2.4.13",
+        "badaso/post-module": "^2.2.1"
+    },
+    "authors": [{
+        "name": "UASOFT",
+        "email": "hello@uatech.co.id"
+    }],
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "Uasoft\\Badaso\\Theme\\LandyTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uasoft\\Badaso\\Theme\\LandyTheme\\Providers\\LandyThemeServiceProvider"
+            ]
+        }
+    }
+}
