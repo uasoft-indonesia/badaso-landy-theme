@@ -7,6 +7,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('landy-theme::layout.masterpage');
+        return view('landy-theme::pages.content');
     }
 }
