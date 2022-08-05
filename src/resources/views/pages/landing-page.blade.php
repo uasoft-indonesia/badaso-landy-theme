@@ -1,4 +1,4 @@
-@extends('landy-theme::layout.master')
+@extends('landy-theme::layout.index')
 @section('mainContent')
     @include('landy-theme::components.landy-landingpage-content')
     {{-- <div class="hidden lg:grid absolute top-[847px] left-18 z-10">

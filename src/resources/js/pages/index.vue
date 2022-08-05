@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import JayaThemeConfigurationBrowse from "./configuration/browse";
+import LandyThemeConfigurationBrowse from "./configuration/browse";
 
 export default {
   components: {
-    JayaThemeConfigurationBrowse,
+    LandyThemeConfigurationBrowse,
   },
-  name: "JayaEntryIndex",
+  name: "LandyEntryIndex",
   data: () => ({
     globalComponentList: {},
     defaultComponent: null,

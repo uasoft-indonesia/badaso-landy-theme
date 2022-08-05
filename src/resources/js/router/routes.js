@@ -6,11 +6,11 @@ let prefix = process.env.MIX_ADMIN_PANEL_ROUTE_PREFIX
 
 export default [
   {
-    path: prefix + "/jaya-theme-configuration",
-    name: "JayaThemeConfigurationBrowse",
+    path: prefix + "/landy-theme-configuration",
+    name: "LandyThemeConfigurationBrowse",
     component: Pages,
     meta: {
-      title: "Browse Jaya Theme Configuration",
+      title: "Landy Theme Configuration",
       useComponent: "AdminContainer"
     },
   },

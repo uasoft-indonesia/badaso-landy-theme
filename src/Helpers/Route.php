@@ -6,7 +6,7 @@ class Route
 {
     public static function getController($key)
     {
-        // get config 'controllers' from config/badaso-jaya-theme.php
+        // get config 'controllers' from config/badaso-landy-theme.php
         $controllers = config('badaso-landy-theme.controllers');
 
         // if the key is not found, return $key
