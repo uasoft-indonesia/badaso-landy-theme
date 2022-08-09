@@ -27,6 +27,8 @@ class LandyThemeServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'badaso-landy');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'landy-theme');
         $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/../Routes/api.php');
+
 
         $this->publishes([
             __DIR__.'/../Seeder'                       => database_path('seeders/Badaso/LandyTheme'),

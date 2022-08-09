@@ -5,10 +5,6 @@
     <link href="{{ mix('css/landy-theme.css') }}" rel="stylesheet">
     <script src="{{ mix('js/landy-theme.js') }}" defer></script>
     <script src="{{ mix('js/index/landy-theme.js') }}" defer></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.2/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

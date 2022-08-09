@@ -38,6 +38,8 @@ function loadDataContent() {
     contact:null,
     footer:null,
     listfooter:null,
+    sidebar:null,
+    socialmedia:null,
 
     slug: ["landy"],
 
@@ -67,17 +69,84 @@ function loadDataContent() {
           this.contact = this.content.contact.data;
           this.footer = this.content.footer.data;
           this.listfooter = this.footer.namefooter1.data;
-          console.log(this.listfooter, "coba");
+          this.sidebar = this.content.sidebar.data;
+          this.socialmedia = this.sidebar.socialmedia.data;
+          console.log(this.sidebar, "coba");
         });
     },
   };
 }
+
+function isEmail(value) {
+  return new RegExp("^\\S+@\\S+[\\.][0-9a-z]+$").test(
+    String(value).toLowerCase()
+  );
+}
+
+function contactForm() {
+  return {
+    formData: {
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+
+    loading: false,
+    buttonLabel: "Send Message",
+
+    submitForm() {
+      if (
+        !this.formData.name.length ||
+        !this.formData.email.length ||
+        !this.formData.phone.length ||
+        !this.formData.subject.length ||
+        !this.formData.message.length
+      ) {
+        alert("Please fill out all required field and try again!");
+        return;
+      }
+
+      this.buttonLabel = "Submitting...";
+      this.loading = true;
+      fetch("/badaso-api/theme/landpro/v1/landpro/sendemail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.formData),
+      })
+        .then((response) => {
+          console.log(response, "res");
+          if (response.ok) {
+            (this.formData.name = ""),
+              (this.formData.email = ""),
+              (this.formData.phone = ""),
+              (this.formData.subject = ""),
+              (this.formData.message = ""),
+              alert("Thank you for your message!");
+          } else {
+            throw new Error(`Something went wrong: ${response.statusText}`);
+          }
+        })
+        .catch((errors) => console.error(errors))
+        .finally(() => {
+          this.loading = false;
+          this.buttonLabel = "Send Message";
+        });
+    },
+  };
+}
+
 
 // event jendela di-load
 google.maps.event.addDomListener(window, "load", initialize);
 
 window.initialize = initialize;
 window.loadDataContent = loadDataContent;
+window.isEmail = isEmail;
+window.contactForm = contactForm;
 
 window.Alpine = Alpine;
 Alpine.start();

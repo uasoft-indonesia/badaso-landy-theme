@@ -3,7 +3,7 @@
          <div class="grid lg:grid-cols-12 pt-10 pr-4 gap-4 ">
              <div class="lg:col-span-6 self-center">
 
-                 <p class="text-4xl  lg:text-[44px] font-bold text-white" x-text="landingpage.title.data">Corporate & Business Site Template By Ayro
+                 <p class="text-4xl  lg:text-[44px] font-bold text-white leading-[56px]" x-text="landingpage.title.data">Corporate & Business Site Template By Ayro
                      UI.</p>
                  <div class="mt-8">
                      <span class="text-left font-normal text-slate-300 text-sm lg:text-base" x-text="landingpage.description.data">

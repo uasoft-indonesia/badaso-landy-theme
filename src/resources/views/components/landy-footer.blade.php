@@ -1,69 +1,126 @@
 <div class="bg-white">
     <div class="container lg:mx-auto max-w-[1280px] w-full px-4">
-        <div class="grid lg:grid-cols-12 pt-10 pb-20 gap-4">
-            <div class="col-span-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-12 pt-10 pb-20 gap-4 px-4">
+            <div class="lg:col-span-4">
                 <div class="flex flex-col">
-                    <div class="flex justify-center lg:justify-start">
-                        <img src="https://demo.ayroui.com/templates/business-template/assets/images/logo.svg"
+                    <div class="flex justify-center md:justify-start">
+                        <img src="https://badaso-docs.uatech.co.id/img/full-logo-badaso.png" :src="footer.logo.data"
                             alt="" class="w-32">
                     </div>
                     <div class="pt-5 flex justify-center lg:justify-start">
-                        <span x-text="footer.description.data" class="text-center lg:text-left">
+                        <span x-text="footer.description.data"
+                            class="text-center md:text-left text-gray-500 text-sm lg:text-base">
                             Making the world a better place through constructing elegant
                             hierarchies.</span>
                     </div>
                     <div class="flex flex-col pt-10">
-                      <div class="flex justify-center lg:justify-start">
-                             <span x-text="footer.copyright.data" class="text-center lg:text-left">© 2022 Landy Theme.</span>
-                      </div>
-                      <div class="flex justify-center lg:justify-start">
-                         <span x-text="footer.created.data" class="">Designed and Developed by
-                            UASOFT</span>
-                      </div>
+                        <div class="flex justify-center md:justify-start">
+                            <span x-text="footer.copyright.data"
+                                class="text-center lg:text-left text-gray-500 text-sm lg:text-base">© 2022
+                                Landy Theme.</span>
+                        </div>
+                        <div class="flex justify-center md:justify-start">
+                            <span x-text="footer.created.data" class="text-gray-500 text-sm lg:text-base">Designed and
+                                Developed by
+                                UASOFT</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-span-4">
+            <div class="lg:col-span-2">
 
-                <div class="flex flex-row space-x-24">
-                    <div class="flex flex-col">
-                        <div class="flex">
-                            <span class="font-bold text-lg" x-text="footer.namefooter1.label">Solutions</span>
+
+                {{-- <div class="grid lg:grid-cols-2 gap-4">
+                    <div class="col-span-1">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center lg:justify-start">
+                                <span class="font-bold text-base lg:text-[20px]"
+                                    x-text="footer.namefooter1.label">Solutions</span>
+                            </div>
+                            <div class="pt-5">
+                                <ul class="list-none">
+                                    <template x-for="listfooter in listfooter">
+                                        <li class="pb-3 text-gray-500 text-center lg:text-left text-sm lg:text-base"
+                                            x-text="listfooter.data.text">
+                                            <a>Marketing</a>
+                                        </li>
+                                    </template>
+
+                                </ul>
+                            </div>
+
+
                         </div>
-                        <div class="pt-5">
-                            <ul class="list-none">
-                                <template x-for="listfooter in listfooter">
-                                <li class="pb-3" x-text="listfooter.data.text"><a>Marketing</a></li>
-                                </template>
-
-                            </ul>
-                        </div>
-
-
                     </div>
-                    <div class="flex flex-col">
-                        <div class="flex">
-                            <span class="font-bold text-lg" x-text="footer.namefooter2.label">Support</span>
-                        </div>
-                        <div class="pt-5">
-                            <ul class="list-none">
-                                <template x-for="listdata in footer.namefooter2.data">
-                                <li class="pb-3" x-text="listdata.data.text"><a>Marketing</a></li>
-                                </template>
+                    <div class="col-span-1">
+                        <div class="flex flex-col">
+                            <div class="flex justify-center lg:justify-start">
+                                <span class="font-bold text-base lg:text-[20px]"
+                                    x-text="footer.namefooter2.label">Support</span>
+                            </div>
+                            <div class="pt-5">
+                                <ul class="list-none">
+                                    <template x-for="listdata in footer.namefooter2.data">
+                                        <li class="pb-3 text-gray-500 text-center lg:text-left text-sm lg:text-base"
+                                            x-text="listdata.data.text"><a>Marketing</a>
+                                        </li>
+                                    </template>
 
-                            </ul>
-                        </div>
+                                </ul>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-span-4">
+
+                </div> --}}
+
                 <div class="flex flex-col">
-                    <div class="flex">
-                        <span class="font-bold text-lg" x-text="footer.subscribe.data.title.data">Subscribe</span>
+                    <div class="flex justify-center md:justify-start">
+                        <span class="font-bold text-base lg:text-[20px]"
+                            x-text="footer.namefooter1.label">Solutions</span>
                     </div>
                     <div class="pt-5">
-                        <span x-text="footer.subscribe.data.description.data">
+                        <ul class="list-none">
+                            <template x-for="listfooter in listfooter">
+                                <li class="pb-3 text-gray-500 text-center md:text-left text-sm lg:text-base"
+                                    x-text="listfooter.data.text">
+                                    <a>Marketing</a>
+                                </li>
+                            </template>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="lg:col-span-2">
+                <div class="flex flex-col">
+                    <div class="flex justify-center md:justify-start">
+                        <span class="font-bold text-base lg:text-[20px]"
+                            x-text="footer.namefooter2.label">Support</span>
+                    </div>
+                    <div class="pt-5">
+                        <ul class="list-none">
+                            <template x-for="listdata in footer.namefooter2.data">
+                                <li class="pb-3 text-gray-500 text-center md:text-left text-sm lg:text-base"
+                                    x-text="listdata.data.text"><a>Marketing</a>
+                                </li>
+                            </template>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="lg:col-span-4">
+                <div class="flex flex-col">
+                    <div class="flex justify-center md:justify-start">
+                        <span class="font-bold text-base lg:text-[20px]" x-text="footer.subscribe.data.title.data">Subscribe</span>
+                    </div>
+                    <div class="pt-5 flex justify-center md:justify-start">
+                        <span x-text="footer.subscribe.data.description.data" class="text-center md:text-left text-gray-500 text-sm lg:text-base">
                             Subscribe to our newsletter for the latest updates</span>
                     </div>
                     <div class="pt-10">

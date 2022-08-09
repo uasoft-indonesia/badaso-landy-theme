@@ -20,7 +20,7 @@
                  <div class="card bg-base-100 rounded-lg border border-slate-200">
                      <div class="card-body">
                          <div class="flex ">
-                             <div class="rounded-full  p-10 border-2 border-blue-700">
+                             <div class="rounded-full  p-5 border-2 border-blue-700">
                                  {{-- <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
                                      viewBox="0 0 24 24" fill="none">
                                      <path
@@ -28,6 +28,7 @@
                                          stroke="#001A72" stroke-width="1.5" stroke-linecap="round"
                                          stroke-linejoin="round" />
                                  </svg> --}}
+                                 <img src="/storage/photos/landy-theme/capsule.png" alt="" class="w-6">
                              </div>
                          </div>
                          <div>

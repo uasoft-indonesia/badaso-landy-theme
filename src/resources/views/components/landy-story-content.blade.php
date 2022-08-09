@@ -11,15 +11,15 @@
 
              </div>
              <div class="col-span-6  self-center">
-                 <div class="absolute top-[948px]">
+                 {{-- <div class="absolute top-[948px]">
                      <svg width="20" height="3" viewBox="0 0 81 3" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                          <line x1="0.5" y1="1.5" x2="80.5" y2="1.5" stroke="#0000FF"
                              stroke-width="8" />
                      </svg>
-                 </div>
+                 </div> --}}
 
-                 <div class="pl-8 mb-5 lg:mb-0">
+                 <div class="mb-5">
                      <span class="text-lg font-semibold" x-text="story.title.data">OUR STORY</span>
                  </div>
                  <div class="">

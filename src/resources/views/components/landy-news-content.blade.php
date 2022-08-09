@@ -23,7 +23,7 @@
                                     class="w-full h-[313px] rounded-xl" :src="list.data.image.data" alt="Shoes" /></figure>
                         </div>
                         <div>
-                            <span class="font-bold text-[20px] lg:text-[24px]" x-text="list.data.title.data"> Make your team a Design driven company </span>
+                            <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer hover:text-blue-700" x-text="list.data.title.data"> Make your team a Design driven company </span>
                         </div>
                         <div class="mt-3"> <span class="text-sm lg:text-base text-gray-500" x-text="list.data.description.data">
                                 Lorem Ipsum is simply dummy text of the printing and
