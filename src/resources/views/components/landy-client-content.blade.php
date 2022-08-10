@@ -23,7 +23,7 @@
                      <template x-for="listclient in listclient">
                          <div class="border-slate-200 bg-white rounded-lg p-8 px-8">
                              <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg"
-                                 :src="listclient.data" alt="">
+                                 :src="listclient.data" class="object-cover" alt="">
                          </div>
                      </template>
 
@@ -31,7 +31,7 @@
                  <div class="flex flex-col lg:flex-row gap-4 lg:ml-8 items-center">
                      <template x-for="datalist in client.listclient2.data">
                          <div class="border-slate-200 bg-white rounded-lg p-8 px-4">
-                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/lineicons.svg"
+                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/lineicons.svg" class="object-cover"
                                  :src="datalist.data" alt="">
                          </div>
                      </template>
@@ -44,7 +44,7 @@
              <template x-for="listclient in listclient">
                  <div class="carousel-item">
                          <div class="border-slate-200 bg-white rounded-lg p-8 items-center">
-                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg"
+                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg" class="object-cover"
                                  :src="listclient.data" alt="">
                          </div>
                  </div>
@@ -52,7 +52,7 @@
                 <template x-for="datalist in client.listclient2.data">
                  <div class="carousel-item">
                          <div class="border-slate-200 bg-white rounded-lg p-8 items-center">
-                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg"
+                             <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg" class="object-cover"
                                  :src="datalist.data" alt="">
                          </div>
                  </div>

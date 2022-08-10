@@ -48,7 +48,7 @@
                 <div class="lg:max-w-[636px] lg:h-[509px]">
                      <a href=""><img
                          src="https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg"
-                         class="rounded-lg w-full" alt="Shoes" /></a>
+                         class="rounded-lg w-full object-cover" alt="Shoes" /></a>
 
                 </div>
 

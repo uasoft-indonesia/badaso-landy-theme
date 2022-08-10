@@ -17,7 +17,7 @@
                  majority have suffered alteration in some form.
              </span>
          </div>
-         {{-- <div class="flex pb-20 lg:pb-40"> --}}
+
          <div class="carousel carousel-center   p-4 space-x-4  rounded-box pb-20 lg:pb-40">
              <template x-for="list in review.listreview.data">
                  <div class="carousel-item bg-white w-full lg:w-1/2 rounded-md">
@@ -38,7 +38,7 @@
                              <div class="flex flex-row ">
                                  <div class="avatar">
                                      <div class="w-16 rounded-full">
-                                         <img src="https://placeimg.com/192/192/people" :src="list.data.avatar.data" />
+                                         <img src="https://placeimg.com/192/192/people" :src="list.data.avatar.data" class="object-cover" />
                                      </div>
                                  </div>
 
@@ -54,7 +54,6 @@
              </template>
 
          </div>
-         {{-- </div> --}}
 
 
      </div>

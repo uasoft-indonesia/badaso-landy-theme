@@ -20,7 +20,7 @@
                         <div>
                             <figure><img
                                     src="https://demo.ayroui.com/templates/business-template/assets/images/team/team-1.jpg"
-                                    alt="" class="h-[350px] w-[416px]" :src="list.data.avatar.data" /></figure>
+                                    alt="" class="h-[350px] w-[416px] object-cover" :src="list.data.avatar.data" /></figure>
                         </div>
                         <div class="card-body ">
                             <h2 class="card-title text-base mx-auto font-bold text-black" x-text="list.data.name.data">

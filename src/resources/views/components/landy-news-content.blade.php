@@ -20,7 +20,7 @@
                         <div class="max-w-[416px] h-[313px] mb-5">
                             <figure><img
                                     src="https://demo.ayroui.com/templates/business-template/assets/images/blog/1.jpg"
-                                    class="w-full h-[313px] rounded-xl" :src="list.data.image.data" alt="Shoes" /></figure>
+                                    class="w-full h-[313px] rounded-xl object-cover" :src="list.data.image.data" alt="Shoes" /></figure>
                         </div>
                         <div>
                             <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer hover:text-blue-700" x-text="list.data.title.data"> Make your team a Design driven company </span>

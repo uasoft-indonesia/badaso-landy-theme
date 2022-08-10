@@ -2,7 +2,7 @@
 
      <div class="mt-5 lg:mt-10 mb-5">
          <a href=""><img src="https://badaso-docs.uatech.co.id/img/full-logo-badaso.png" :src="sidebar.logo.data"
-                 class="w-32" alt=""></a>
+                 class="w-32 object-cover" alt=""></a>
      </div>
      <div class="hidden lg:grid">
          <div class="mb-5">

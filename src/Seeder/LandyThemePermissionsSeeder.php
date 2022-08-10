@@ -1,12 +1,12 @@
 <?php
 
-namespace Database\Seeders\Badaso\JayaTheme;
+namespace Database\Seeders\Badaso\LandyTheme;
 
 use Illuminate\Database\Seeder;
 use Uasoft\Badaso\Models\Permission;
 use Uasoft\Badaso\Models\Role;
 
-class JayaThemePermissionsSeeder extends Seeder
+class LandyThemePermissionsSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -14,8 +14,8 @@ class JayaThemePermissionsSeeder extends Seeder
     public function run()
     {
         $keys = [
-            'browse_jaya_theme_configuration',
-            'edit_jaya_theme_configuration',
+            'browse_landy_theme_configuration',
+            'edit_landy_theme_configuration',
         ];
 
         $administrator = Role::where('name', 'administrator')->firstOrFail();

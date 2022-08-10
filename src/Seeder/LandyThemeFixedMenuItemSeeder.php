@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders\Badaso\JayaTheme;
+namespace Database\Seeders\Badaso\LandyTheme;
 
 use Exception;
 use Illuminate\Database\Seeder;
@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Uasoft\Badaso\Models\Menu;
 use Uasoft\Badaso\Models\MenuItem;
 
-class JayaThemeFixedMenuItemSeeder extends Seeder
+class LandyThemeFixedMenuItemSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -22,18 +22,18 @@ class JayaThemeFixedMenuItemSeeder extends Seeder
         DB::beginTransaction();
 
         try {
-            $menu_id = Menu::where('key', 'jaya-theme')->firstOrFail()->id;
+            $menu_id = Menu::where('key', 'landy-theme')->firstOrFail()->id;
             $menu_items = [
                 0 => [
                     'menu_id'     => $menu_id,
                     'title'       => 'Configuration',
-                    'url'         => '/jaya-theme-configuration',
+                    'url'         => '/landy-theme-configuration',
                     'target'      => '_self',
                     'icon_class'  => 'settings',
                     'color'       => '',
                     'parent_id'   => null,
                     'order'       => 1,
-                    'permissions' => 'browse_jaya_theme_configuration',
+                    'permissions' => 'browse_landy_theme_configuration',
                 ],
             ];
 

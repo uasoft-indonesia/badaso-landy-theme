@@ -15,7 +15,7 @@
          <div class="flex justify-center mb-10">
             <div class="lg:w-[900px] lg:h-[450px]">
                    <img src="https://demo.ayroui.com/templates/business-template/assets/images/video/video-bg.png"
-                 class="rounded-lg w-full" alt="Shoes" />
+                 class="rounded-lg w-full object-cover" alt="Shoes" />
 
             </div>
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders\Badaso\JayaTheme;
+namespace Database\Seeders\Badaso\LandyTheme;
 
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Uasoft\Badaso\Models\Configuration;
 
-class JayaThemeConfigurationsSeeder extends Seeder
+class LandyThemeConfigurationsSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -23,33 +23,33 @@ class JayaThemeConfigurationsSeeder extends Seeder
         try {
             $settings = [
                 0 => [
-                    'key'          => 'jayaThemeNavbarTitle',
+                    'key'          => 'LandyThemeNavbarTitle',
                     'display_name' => 'Navigation Bar Title',
-                    'value'        => 'Jaya Theme',
+                    'value'        => 'Landy Theme',
                     'details'      => '',
                     'type'         => 'text',
                     'order'        => 1,
-                    'group'        => 'jayaTheme',
+                    'group'        => 'landyTheme',
                     'can_delete'   => 0,
                 ],
                 1 => [
-                    'key'          => 'jayaThemeFacebookId',
+                    'key'          => 'LandyThemeFacebookId',
                     'display_name' => 'Facebook ID for comment',
                     'value'        => '',
                     'details'      => '',
                     'type'         => 'text',
                     'order'        => 2,
-                    'group'        => 'jayaTheme',
+                    'group'        => 'landyTheme',
                     'can_delete'   => 0,
                 ],
                 2 => [
-                    'key'          => 'jayaThemeAdsId',
+                    'key'          => 'LandyThemeAdsId',
                     'display_name' => 'Advertisement column',
                     'value'        => '',
                     'details'      => '',
                     'type'         => 'type_image',
                     'order'        => 3,
-                    'group'        => 'jayaTheme',
+                    'group'        => 'landyTheme',
                     'can_delete'   => 0,
                 ],
             ];

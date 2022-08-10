@@ -22,7 +22,7 @@
                          <div class="flex ">
                              <div class="rounded-full  p-5 border-2 border-blue-700">
 
-                                 <img src="/storage/photos/landy-theme/capsule.png" alt="" class="w-6">
+                                 <img src="/storage/photos/landy-theme/capsule.png" alt="" class="w-6 object-cover">
                              </div>
                          </div>
                          <div>

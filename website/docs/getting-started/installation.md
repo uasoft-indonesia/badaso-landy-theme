@@ -4,81 +4,80 @@ sidebar_position: 1
 
 # Installation
 
-1. Install [badaso](https://github.com/uasoft-indonesia/badaso), [badaso-content-module](https://github.com/uasoft-indonesia/badaso-content-module.git), and [badaso-post-module](https://github.com/uasoft-indonesia/badaso-post-module.git). After that, you can include the Badaso package with the following command.
+1. You can install the landy theme with the following command.
 
 ```
 composer require badaso/landy-theme
 ```
 
-2. Run the following command.
-```
-npm install
-```
-3. Run the following command to setup the `badaso-core`.
+2. (Optional) Run the following command to setup the badaso-core. If you never run it before.
 
 ```
 php artisan badaso:setup
 ```
-
-4. Run the following command to setup the `badaso-content`.
+3. (Optional) Run the following command to setup the badaso-content. If you never run it before.
 
 ```
 php artisan badaso-content:setup
 ```
 
-5. Run the following command to setup the `badaso-post`.
+4. (Optional) Run the following command to setup the badaso-post. If you never run it before.
 
 ```
 php artisan badaso-post:setup
 ```
-6. Run the following command to setup the `badaso-landy-theme`.
+
+5. Run the following command to setup the theme
 
 ```
 php artisan badaso-landy-theme:setup
-composer dump-autoload
 ```
 
-7. Run the following command to migrate all table.
+6. Run the following command to migrate database.
 
 ```
 php artisan migrate
 ```
 
-8. Run the following command to generate seeder.
+7. (Optional) Run the following command to generate seeder of badaso core, content module and post module. If you never run it before.
+
+```
+php artisan db:seed --class="Database\Seeders\Badaso\BadasoSeeder"
+
+php artisan db:seed --class="Database\Seeders\Badaso\Post\BadasoPostModuleSeeder"
+
+php artisan db:seed --class="Database\Seeders\Badaso\Content\BadasoContentModuleSeeder"
+```
+
+8. Run the command to generate seeder of Landy theme.
 
 ```
 php artisan db:seed --class='Database\Seeders\Badaso\LandyTheme\BadasoLandyThemeSeeder'
 ```
-or
-```
-php artisan db:seed
-```
 
-9. Add the plugins to your MIX_BADASO_MODULES to .env.
+9. Add the plugins to your MIX_POST_URL_PREFIX to .env.
+
 ```
-MIX_BADASO_MODULES=landy-theme
+MIX_BADASO_PLUGINS=content-module,post-module,landy-theme
 ```
 
 10. Add the plugins menu to your MIX_BADASO_MENU to .env. If you have another menu, include them using delimiter comma (,).
 ```
-MIX_BADASO_MENU=admin,landy-theme
+MIX_BADASO_MENU=${MIX_DEFAULT_MENU},content-module,post-module,landy-theme
 ```
 
-11. Fill the other variables in .env file.
+11. Install JS depedency
 ```
-    - `LANDPRO_THEME_PREFIX=landy` Set prefix for the theme.
-```
-
-12. Add Tailwind to your Laravel Mix configuration.In your `webpack.mix.js` file.
-```
- mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
-        .js("vendor/badaso/landy-theme/src/resources/js/index/landy-theme.js", "public/js/index/landy-theme.js")
-        .css('vendor/badaso/landy-theme/src/resources/app/assets/css/style.css', 'public/css/landy-theme.css',{}, [require('tailwindcss')('./tailwind-landy.config.js'),
-        require("autoprefixer"),])
+   npm install
 ```
 
-13. Start your build process. Run your build process with `npm run watch`.
+12. Build JS dependency.
 ```
-npm run watch
+ npm run watch
+```
+
+13. Finished. You can access the landy theme
+```
+http://localhost:8000/landy
 ```
 

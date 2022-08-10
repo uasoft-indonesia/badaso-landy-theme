@@ -4,75 +4,80 @@ sidebar_position: 1
 
 # Installation
 
-1. Install [badaso](https://github.com/uasoft-indonesia/badaso),[badaso-content-module](https://github.com/uasoft-indonesia/badaso-content-module.git) dan [badaso-post-module](https://github.com/uasoft-indonesia/badaso-post-module). Setelah itu, Anda dapat memasukkan paket Badaso dengan perintah berikut.
+1. Anda bisa menginstal tema landy dengan mengikuti perintah berikut.
 
 ```
 composer require badaso/landy-theme
 ```
 
-2. Jalankan perintah berikut.
-```
-npm install
-```
-
-3. Jalankan perintah berikut untuk mengatur `badaso-core`.
+2. (Pilihan) Jalankan perintah berikut untuk mengatur badaso-core. Jika Anda tidak pernah menjalankannya sebelumnya.
 
 ```
 php artisan badaso:setup
 ```
-4. Jalankan perintah berikut untuk mengatur `badaso-content`.
+3. (Pilihan) Jalankan perintah berikut untuk mengatur badaso-content. Jika Anda tidak pernah menjalankannya sebelumnya.
 
 ```
 php artisan badaso-content:setup
 ```
-5. Jalankan perintah berikut untuk mengatur `badaso-post`.
+
+4. (Optional) Jalankan perintah berikut untuk mengatur badaso-post. Jika Anda tidak pernah menjalankannya sebelumnya.
 
 ```
 php artisan badaso-post:setup
 ```
 
-6. Jalankan perintah berikut untuk mengatur `badaso-landy`.
+5. Jalankan perintah berikut untuk mengatur tema
 
 ```
 php artisan badaso-landy-theme:setup
-composer dump-autoload
 ```
-7. Jalankan perintah berikut untuk memigrasi semua tabel .
+
+6. Jalankan perintah berikut untuk migrate database.
 
 ```
 php artisan migrate
 ```
-8. Jalankan perintah ini untuk generate seeder.
+
+7. (Pilihan) Jalankan perintah berikut untuk generate seeder dari badaso core, content module dan post module. Jika Anda tidak pernah menjalankannya sebelumnya.
 
 ```
-php artisan db:seed --class='Database\Seeders\Badaso\landyTheme\BadasolandyThemeSeeder'
-```
-or
-```
-php artisan db:seed
-```
-9. Tambahkan plugins MIX_BADASO_MODULES pada .env.
-```
-MIX_BADASO_MODULES=landy-theme
-```
-10. Tambahkan plugins menu  MIX_BADASO_MENU pada .env. Jika kamu memiliki menu modul lain, tambahkan mereka dengan menyisipkan koma diantara modul (,).
-```
-MIX_BADASO_MENU=admin,landy-theme
-```
-11. Masukan variable lain didalam .env file.
-```
-    - `landy_THEME_PREFIX=landy` Mengatur prefix landy theme.
-```
-12. Tambahkan Tailwind pada Laravel Mix configuration.Di dalam  `webpack.mix.js` file.
-```
- mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
-        .js("vendor/badaso/landy-theme/src/resources/js/index/landy-theme.js", "public/js/index/landy-theme.js")
-        .css('vendor/badaso/landy-theme/src/resources/app/assets/css/style.css', 'public/css/landy-theme.css',{}, [require('tailwindcss')('./tailwind-landy.config.js'),
-        require("autoprefixer"),])
-```
-13. Mulai proses pembuatan Anda. Jalankan proses pembuatan Anda dengan `npm run watch`.
-```
-npm run watch
+php artisan db:seed --class="Database\Seeders\Badaso\BadasoSeeder"
+
+php artisan db:seed --class="Database\Seeders\Badaso\Post\BadasoPostModuleSeeder"
+
+php artisan db:seed --class="Database\Seeders\Badaso\Content\BadasoContentModuleSeeder"
 ```
 
+8. Jalankan perintah berikut untuk generate seeder dari Landy theme.
+
+```
+php artisan db:seed --class='Database\Seeders\Badaso\LandyTheme\BadasoLandyThemeSeeder'
+```
+
+9. Tambahkan plugins pada MIX_POST_URL_PREFIX untuk .env.
+
+```
+MIX_BADASO_PLUGINS=content-module,post-module,landy-theme
+```
+
+10. Tambahkan menu plugins  ke MIX_BADASO_MENU anda pada .env.Jika anda memiliki menu lain, tambahkan mereka setelah koma (,).
+```
+MIX_BADASO_MENU=${MIX_DEFAULT_MENU},content-module,post-module,landy-theme
+```
+
+11. Install JS depedency
+```
+   npm install
+```
+
+12. Bangun JS dependency.
+```
+ npm run watch
+```
+
+13. Selesai. Anda bisa mengakses tema landy
+```
+http://localhost:8000/landy
+```
 

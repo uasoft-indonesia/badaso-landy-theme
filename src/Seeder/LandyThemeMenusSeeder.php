@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders\Badaso\JayaTheme;
+namespace Database\Seeders\Badaso\LandyTheme;
 
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Uasoft\Badaso\Models\Menu;
 
-class JayaThemeMenusSeeder extends Seeder
+class LandyThemeMenusSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -23,8 +23,8 @@ class JayaThemeMenusSeeder extends Seeder
         try {
             $menus = [
                 0 => [
-                    'key'          => 'jaya-theme',
-                    'display_name' => 'Jaya Theme',
+                    'key'          => 'landy-theme',
+                    'display_name' => 'Landy Theme',
                 ],
             ];
 
