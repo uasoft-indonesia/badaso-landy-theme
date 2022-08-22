@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: "Badaso Landy Theme Documentation",
     tagline: "Badaso landy theme official documentation",
-    url: "https://badaso-landy-theme.uatech.co.id",
+    url: "https://badaso-landy.uatech.co.id",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -30,13 +30,13 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
-                    editUrl: "https://github.com/uasoft-indonesia/badaso-landpro-theme/edit/main/website/",
+                    editUrl: "https://github.com/uasoft-indonesia/badaso-landy-theme/edit/main/website/",
                     routeBasePath: "/",
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: "https://github.com/uasoft-indonesia/badaso-landpro-theme/edit/main/website/blog",
+                    editUrl: "https://github.com/uasoft-indonesia/badaso-landy-theme/edit/main/website/blog",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
