@@ -33,7 +33,7 @@ class LandyThemeContentsSeeder extends Seeder
                         "name": "logo",
                         "label": "logo",
                         "type": "image",
-                        "data": "http://localhost:8000/storage/photos/1/Full-logo-badaso-1.png"
+                        "data": "photos/1/Full-logo-badaso-1.png"
                     },
                     "listnavbar": {
                         "name": "listnavbar",
@@ -119,7 +119,7 @@ class LandyThemeContentsSeeder extends Seeder
                         "name": "image",
                         "label": "Image Landing Page",
                         "type": "image",
-                        "data": "http://localhost:8000/storage/photos/1/hero-image.jpeg"
+                        "data": "photos/1/hero-image.jpeg"
                     }
                 }
             },
@@ -132,7 +132,7 @@ class LandyThemeContentsSeeder extends Seeder
                         "name": "image",
                         "label": "Image Story",
                         "type": "image",
-                        "data": "http://localhost:8000/storage/photos/1/about-img1.jpeg"
+                        "data": "photos/1/about-img1.jpeg"
                     },
                     "title": {
                         "name": "title",
@@ -222,7 +222,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/capsule.png"
+                                        "data": "photos/1/capsule.png"
                                     }
                                 }
                             },
@@ -247,7 +247,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/tailwind.jpg"
+                                        "data": "photos/1/tailwind.jpg"
                                     }
                                 }
                             },
@@ -272,7 +272,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/s-logo.jpeg"
+                                        "data": "photos/1/s-logo.jpeg"
                                     }
                                 }
                             },
@@ -297,7 +297,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/dashboard.png"
+                                        "data": "photos/1/dashboard.png"
                                     }
                                 }
                             },
@@ -322,7 +322,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/layers.png"
+                                        "data": "photos/1/layers.png"
                                     }
                                 }
                             },
@@ -347,7 +347,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/reload.jpg"
+                                        "data": "photos/1/reload.jpg"
                                     }
                                 }
                             }
@@ -463,7 +463,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "Image",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/pf1.jpeg"
+                                        "data": "photos/1/pf1.jpeg"
                                     },
                                     "title": {
                                         "name": "title",
@@ -488,7 +488,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "Image",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/pf2.jpeg"
+                                        "data": "photos/1/pf2.jpeg"
                                     },
                                     "title": {
                                         "name": "title",
@@ -513,7 +513,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "Image",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/pf3.jpeg"
+                                        "data": "photos/1/pf3.jpeg"
                                     },
                                     "title": {
                                         "name": "title",
@@ -770,7 +770,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "Avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/team-1.jpeg"
+                                        "data": "photos/1/team-1.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -795,7 +795,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "Avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/team-2.jpeg"
+                                        "data": "photos/1/team-2.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -820,7 +820,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "Avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/team-3.jpeg"
+                                        "data": "photos/1/team-3.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -896,7 +896,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/author-1.jpeg"
+                                        "data": "photos/1/author-1.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -927,7 +927,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/author-4.jpeg"
+                                        "data": "photos/1/author-4.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -958,7 +958,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "avatar",
                                         "label": "avatar",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/author-5.jpeg"
+                                        "data": "photos/1/author-5.jpeg"
                                     },
                                     "name": {
                                         "name": "name",
@@ -1020,7 +1020,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "image news 1",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/news-1.jpeg"
+                                        "data": "photos/1/news-1.jpeg"
                                     },
                                      "title": {
                                         "name": "title",
@@ -1057,7 +1057,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "image news 2",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/news-2.jpeg"
+                                        "data": "photos/1/news-2.jpeg"
                                     }
                                 }
                             },
@@ -1082,7 +1082,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "image news 3",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/news-3.jpeg"
+                                        "data": "photos/1/news-3.jpeg"
                                     }
                                 }
                             }
@@ -1123,19 +1123,19 @@ class LandyThemeContentsSeeder extends Seeder
                                 "name": "client1",
                                 "label": "logo client 1",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/graygrids.svg"
+                                "data": "photos/1/graygrids.svg"
                             },
                             "client2": {
                                 "name": "client2",
                                 "label": "logo client 2",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/uideck.svg"
+                                "data": "photos/1/uideck.svg"
                             },
                             "client3": {
                                 "name": "client3",
                                 "label": "logo client 3",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/ayroui.svg"
+                                "data": "photos/1/ayroui.svg"
                             }
                         }
                     },
@@ -1148,19 +1148,19 @@ class LandyThemeContentsSeeder extends Seeder
                                 "name": "client4",
                                 "label": "logo client 4",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/lineicons.svg"
+                                "data": "photos/1/lineicons.svg"
                             },
                             "client5": {
                                 "name": "client5",
                                 "label": "logo client 5",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/tailwindtemplates.svg"
+                                "data": "photos/1/tailwindtemplates.svg"
                             },
                             "client6": {
                                 "name": "client6",
                                 "label": "logo client 6",
                                 "type": "image",
-                                "data": "http://localhost:8000/storage/photos/1/ecomhtml.svg"
+                                "data": "photos/1/ecomhtml.svg"
                             }
                         }
                     }
@@ -1275,7 +1275,7 @@ class LandyThemeContentsSeeder extends Seeder
                         "name": "logo",
                         "label": "logo",
                         "type": "image",
-                        "data": "http://localhost:8000/storage/photos/1/full-logo-badaso.png"
+                        "data": "photos/1/full-logo-badaso.png"
                     },
                     "description": {
                         "name": "description",
@@ -1411,7 +1411,7 @@ class LandyThemeContentsSeeder extends Seeder
                         "name": "logo",
                         "label": "Logo",
                         "type": "image",
-                        "data": "http://localhost:8000/storage/photos/1/full-logo-badaso.png"
+                        "data": "photos/1/full-logo-badaso.png"
                     },
                     "description": {
                         "name": "description",
@@ -1476,7 +1476,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/fb.png"
+                                        "data": "photos/1/fb.png"
                                     },
                                     "link": {
                                         "name": "link",
@@ -1498,7 +1498,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/social_twitter.png"
+                                        "data": "photos/1/social_twitter.png"
                                     },
                                     "links": {
                                         "name": "links",
@@ -1520,7 +1520,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "http://localhost:8000/storage/photos/1/linked.png"
+                                        "data": "photos/1/linked.png"
                                     },
                                     "link": {
                                         "name": "link",
