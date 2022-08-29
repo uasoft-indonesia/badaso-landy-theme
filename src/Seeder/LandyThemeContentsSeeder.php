@@ -22,7 +22,7 @@ class LandyThemeContentsSeeder extends Seeder
         try {
             $contents = [
                 0 => [
-                    'slug' => 'Landy',
+                    'slug' => 'landy',
                     'label' => 'Landy',
                     'value' => '{"navbar": {
                 "name": "navbar",
@@ -488,7 +488,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "image",
                                         "label": "Image",
                                         "type": "image",
-                                        "data": photos/1/pf2.jpeg"
+                                        "data": "photos/1/pf2.jpeg"
                                     },
                                     "title": {
                                         "name": "title",
