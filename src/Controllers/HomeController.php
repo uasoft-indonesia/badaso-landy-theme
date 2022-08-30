@@ -25,7 +25,7 @@ class HomeController extends Controller
                 'subject' => 'required|string',
                 'message' => 'required|string',
             ]);
-            $email_company = 'miftahurrahmi45@gmail.com';
+            $email_company = env('MAIL_FROM_ADDRESS');
             Mail::to($email_company)->send(new SendEmail($request));
 
             return ApiResponse::success();

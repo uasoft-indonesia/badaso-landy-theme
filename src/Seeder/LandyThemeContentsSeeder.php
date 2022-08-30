@@ -235,7 +235,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "title",
                                         "label": "Title",
                                         "type": "text",
-                                        "data": "Solid Bootstrap 5"
+                                        "data": "Solid Tailwind CSS"
                                     },
                                     "description": {
                                         "name": "description",
@@ -247,7 +247,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "photos/1/tailwind.jpg"
+                                        "data": "photos/1/tailwindcss.svg"
                                     }
                                 }
                             },
@@ -272,7 +272,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "photos/1/s-logo.jpeg"
+                                        "data": "photos/1/shortcode.svg"
                                     }
                                 }
                             },
@@ -297,7 +297,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "photos/1/dashboard.png"
+                                        "data": "photos/1/dashboard.svg"
                                     }
                                 }
                             },
@@ -322,7 +322,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "photos/1/layers.png"
+                                        "data": "photos/1/layers.svg"
                                     }
                                 }
                             },
@@ -347,7 +347,7 @@ class LandyThemeContentsSeeder extends Seeder
                                         "name": "logo",
                                         "label": "logo",
                                         "type": "image",
-                                        "data": "photos/1/reload.jpg"
+                                        "data": "photos/1/refresh.svg"
                                     }
                                 }
                             }

@@ -9,10 +9,7 @@
              <span class="text-3xl lg:text-4xl font-bold text-center" x-text="service.subtitle.data">Our Best Services</span>
          </div>
          <div class="flex justify-center mb-10 mx-5 lg:mx-96">
-             <span class="text-center text-sm lg:text-base text-gray-500 " x-text="service.description.data">There are many variations of passages of Lorem Ipsum
-                 available, but the
-                 majority have suffered
-                 alteration in some form.</span>
+             <span class="text-center text-sm lg:text-base text-gray-500 " x-text="service.description.data"></span>
          </div>
          <div class="grid md:grid-cols-2 lg:grid-cols-12 auto-rows-auto gap-6 px-4">
             <template x-for="data in listservice">
@@ -21,8 +18,7 @@
                      <div class="card-body">
                          <div class="flex ">
                              <div class="rounded-full  p-5 border-2 border-blue-700">
-
-                                 <img src="/storage/photos/landy-theme/capsule.png" alt="" class="w-6 object-cover">
+                                 <img src="/storage/photos/1/capsule.png" :src="data.data.logo.data" alt="" class="w-6 object-cover">
                              </div>
                          </div>
                          <div>
