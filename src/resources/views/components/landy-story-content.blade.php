@@ -5,17 +5,17 @@
              <div class="col-span-6  z-20">
                 <div class="lg:max-w-[576px] lg:h-[562px] mb-16 lg:mb-0">
                      <a href=""><img
-                         src="https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg"
+                         src="https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg" :src="story.image.data"
                          class=" w-full object-cover" alt="Shoes" /></a>
                 </div>
 
              </div>
              <div class="col-span-6  self-center">
                  <div class="mb-5">
-                     <span class="text-lg font-semibold" x-text="story.title.data">OUR STORY</span>
+                     <span class="text-lg font-semibold" x-text="story.title.data"></span>
                  </div>
                  <div class="">
-                     <span class="text-3xl lg:text-4xl font-semibold" x-text="story.subtitle.data">Our team comes with the experience and knowledge</span>
+                     <span class="text-3xl lg:text-4xl font-semibold" x-text="story.description.data"></span>
 
                  </div>
 

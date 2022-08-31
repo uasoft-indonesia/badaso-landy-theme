@@ -23,16 +23,16 @@
                      <template x-for="listclient in listclient">
                          <div class="border-slate-200 bg-white rounded-lg p-8 px-8">
                              <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg"
-                                 :src="listclient.data" class="object-cover" alt="">
+                                 :src="listclient.logo.data" class="object-cover" alt="">
                          </div>
                      </template>
 
                  </div>
                  <div class="flex flex-col lg:flex-row gap-4 lg:ml-8 items-center">
-                     <template x-for="datalist in client.listclient2.data">
+                     <template x-for="datalist in client.clientlist2.data">
                          <div class="border-slate-200 bg-white rounded-lg p-8 px-4">
                              <img src="https://demo.ayroui.com/templates/business-template/assets/images/client-logo/lineicons.svg" class="object-cover"
-                                 :src="datalist.data" alt="">
+                                 :src="datalist.logo.data" alt="">
                          </div>
                      </template>
 

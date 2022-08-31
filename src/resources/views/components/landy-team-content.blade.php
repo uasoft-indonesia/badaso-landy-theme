@@ -14,18 +14,18 @@
                 </span>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6  pb-28">
-                <template x-for="list in team.listteam.data">
+                <template x-for="list in team.list.data">
                 <div class="flex col-span-1">
                     <div class="card card-compact shadow-xl rounded-lg">
                         <div>
                             <figure><img
                                     src="https://demo.ayroui.com/templates/business-template/assets/images/team/team-1.jpg"
-                                    alt="" class="h-[350px] w-[416px] object-cover" :src="list.data.avatar.data" /></figure>
+                                    alt="" class="h-[350px] w-[416px] object-cover" :src="list.avatar.data" /></figure>
                         </div>
                         <div class="card-body ">
-                            <h2 class="card-title text-base mx-auto font-bold text-black" x-text="list.data.name.data">
+                            <h2 class="card-title text-base mx-auto font-bold text-black" x-text="list.name.data">
                                 Jeffery Riley</h2>
-                            <p class="text-blue-700 text-base mx-auto " x-text="list.data.position.data">Web Design</p>
+                            <p class="text-blue-700 text-base mx-auto " x-text="list.position.data">Web Design</p>
                         </div>
                     </div>
 

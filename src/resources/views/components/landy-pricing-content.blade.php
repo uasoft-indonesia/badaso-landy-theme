@@ -20,15 +20,14 @@
                         <div class="card-body">
                             <div class="flex justify-center mb-5">
                                 <div class="rounded-full border-2 border-blue-700 p-1 px-8 mt-5 ">
-                                    <span class="font-semibold text-base text-blue-700" x-text="list.data.title.data">Starter</span>
+                                    <span class="font-semibold text-base text-blue-700" x-text="list.title.data">Starter</span>
                                 </div>
                             </div>
                             <div class="flex justify-center mb-5">
-                                <span class="text-center text-sm lg:text-base text-gray-500" x-text="list.data.description.data">Lorem Ipsum is simply dummy text of the printing and
-                                    industry.</span>
+                                <span class="text-center text-sm lg:text-base text-gray-500" x-text="list.description.data"></span>
                             </div>
                             <div class="flex justify-center mb-5">
-                                <span>$ <span class="font-bold text-5xl" x-text="list.data.price.data">150</span><span>/mo</span></span>
+                                <span>$ <span class="font-bold text-5xl" x-text="list.price.data">150</span><span>/mo</span></span>
                             </div>
                             <div class="flex justify-center mb-5">
                                 <button
@@ -36,9 +35,9 @@
                                     free trial</button>
                             </div>
                             <div class="flex px-4">
-                                <ul class="list-disc text-base text-gray-500">
-                                    <template x-for="listspesification in list.data.specification.data">
-                                    <li class="pb-2" x-text="listspesification.data"> Cras justo odio.</li>
+                                <ul class="list-disc text-base text-gray-500" x-data="list.benefit">
+                                    <template x-for="databenefit in list.benefit.data.list.data">
+                                    <li class="pb-2" x-text="databenefit.description.data"> Cras justo odio.</li>
                                     </template>
 
                                 </ul>

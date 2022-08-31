@@ -45,25 +45,24 @@
           </div>
 
           <div class="grid  md:grid-cols-2  grid-cols-1 lg:grid-cols-12 gap-4 mb-10">
-            <template x-for="list in listportfolio">
+
               <div class="lg:col-span-4">
                   <div class="flex flex-col">
                       <div class="lg:max-w-[416px] h-[313px] mb-5">
                           <figure><img
                                   src="https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf1.jpg"
-                                  class="w-full h-[313px] rounded-xl object-cover" :src="list.data.image.data" alt="Shoes" /></figure>
+                                  class="w-full h-[313px] rounded-xl object-cover" alt="Shoes" /></figure>
                       </div>
                       <div>
-                          <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer" x-text="list.data.title.data">Graphics Design</span>
+                          <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer">Graphics Design</span>
                       </div>
-                      <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base" x-text="list.data.description.data">Short description for the ones who
+                      <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base" >Short description for the ones who
                               look for something new.
                               Awesome!</span>
                       </div>
 
                   </div>
               </div>
-              </template>
 
           </div>
       </div>

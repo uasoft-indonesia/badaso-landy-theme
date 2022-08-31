@@ -15,75 +15,31 @@
                     </div>
                     <div class="flex flex-col pt-10">
                         <div class="flex justify-center md:justify-start">
-                            <span x-text="footer.copyright.data"
-                                class="text-center lg:text-left text-gray-500 text-sm lg:text-base">© 2022
+                            <span class="text-center lg:text-left text-gray-500 text-sm lg:text-base">© 2022
                                 Landy Theme.</span>
                         </div>
                         <div class="flex justify-center md:justify-start">
-                            <span x-text="footer.created.data" class="text-gray-500 text-sm lg:text-base">Designed and
+                            <span class="text-gray-500 text-sm lg:text-base">Designed and
                                 Developed by
                                 UASOFT</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <template x-for="listdata in listfooter">
             <div class="lg:col-span-2">
-
-
-                {{-- <div class="grid lg:grid-cols-2 gap-4">
-                    <div class="col-span-1">
-                        <div class="flex flex-col">
-                            <div class="flex justify-center lg:justify-start">
-                                <span class="font-bold text-base lg:text-[20px]"
-                                    x-text="footer.namefooter1.label">Solutions</span>
-                            </div>
-                            <div class="pt-5">
-                                <ul class="list-none">
-                                    <template x-for="listfooter in listfooter">
-                                        <li class="pb-3 text-gray-500 text-center lg:text-left text-sm lg:text-base"
-                                            x-text="listfooter.data.text">
-                                            <a>Marketing</a>
-                                        </li>
-                                    </template>
-
-                                </ul>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-span-1">
-                        <div class="flex flex-col">
-                            <div class="flex justify-center lg:justify-start">
-                                <span class="font-bold text-base lg:text-[20px]"
-                                    x-text="footer.namefooter2.label">Support</span>
-                            </div>
-                            <div class="pt-5">
-                                <ul class="list-none">
-                                    <template x-for="listdata in footer.namefooter2.data">
-                                        <li class="pb-3 text-gray-500 text-center lg:text-left text-sm lg:text-base"
-                                            x-text="listdata.data.text"><a>Marketing</a>
-                                        </li>
-                                    </template>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div> --}}
 
                 <div class="flex flex-col">
                     <div class="flex justify-center md:justify-start">
                         <span class="font-bold text-base lg:text-[20px]"
-                            x-text="footer.namefooter1.label">Solutions</span>
+                            x-text="listdata.title.data">Solutions</span>
                     </div>
                     <div class="pt-5">
                         <ul class="list-none">
-                            <template x-for="listfooter in listfooter">
+                            <template x-for="datalabel in listdata.label.data.labeltitle.data">
+
                                 <li class="pb-3 text-gray-500 text-center md:text-left text-sm lg:text-base"
-                                    x-text="listfooter.data.text">
+                                    x-text="datalabel.title.data.text">
                                     <a>Marketing</a>
                                 </li>
                             </template>
@@ -95,25 +51,8 @@
                 </div>
 
             </div>
-            <div class="lg:col-span-2">
-                <div class="flex flex-col">
-                    <div class="flex justify-center md:justify-start">
-                        <span class="font-bold text-base lg:text-[20px]"
-                            x-text="footer.namefooter2.label">Support</span>
-                    </div>
-                    <div class="pt-5">
-                        <ul class="list-none">
-                            <template x-for="listdata in footer.namefooter2.data">
-                                <li class="pb-3 text-gray-500 text-center md:text-left text-sm lg:text-base"
-                                    x-text="listdata.data.text"><a>Marketing</a>
-                                </li>
-                            </template>
+            </template>
 
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
             <div class="lg:col-span-4">
                 <div class="flex flex-col">
                     <div class="flex justify-center md:justify-start">

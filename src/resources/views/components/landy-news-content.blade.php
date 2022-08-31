@@ -14,18 +14,18 @@
                 </span>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-4 mb-32">
-                <template x-for="list in latestnews.listnews.data">
+
                 <div class="lg:col-span-4">
                     <div class="flex flex-col">
                         <div class="max-w-[416px] h-[313px] mb-5">
                             <figure><img
                                     src="https://demo.ayroui.com/templates/business-template/assets/images/blog/1.jpg"
-                                    class="w-full h-[313px] rounded-xl object-cover" :src="list.data.image.data" alt="Shoes" /></figure>
+                                    class="w-full h-[313px] rounded-xl object-cover"  alt="Shoes" /></figure>
                         </div>
                         <div>
-                            <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer hover:text-blue-700" x-text="list.data.title.data"> Make your team a Design driven company </span>
+                            <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer hover:text-blue-700" > Make your team a Design driven company </span>
                         </div>
-                        <div class="mt-3"> <span class="text-sm lg:text-base text-gray-500" x-text="list.data.description.data">
+                        <div class="mt-3"> <span class="text-sm lg:text-base text-gray-500">
                                 Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum has been the industry's
                                 standard.</span>
@@ -33,7 +33,7 @@
 
                     </div>
                 </div>
-                </template>
+
 
             </div>
 

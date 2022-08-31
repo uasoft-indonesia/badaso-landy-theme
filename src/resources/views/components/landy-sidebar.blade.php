@@ -11,11 +11,12 @@
                  sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.</span>
          </div>
          <div>
-             <p class="mb-4"><span class="font-bold pb-2" x-text="sidebar.links.label">Quick Links</span></p>
+             <p class="mb-4"><span class="font-bold pb-2" x-text="sidebar.title.data">Quick Links</span></p>
          </div>
          <div class="flex flex-col text-base text-gray-500 text-left">
              <template x-for="datalist in sidebar.links.data">
-                 <a href="" class="mb-4"><span x-text="datalist.data.text">About Us</span></a>
+                 <a href="" class="mb-4" :href="datalist.label.data.url"><span
+                         x-text="datalist.label.data.text">About Us</span></a>
              </template>
          </div>
      </div>
@@ -28,18 +29,16 @@
      </div>
 
      <div>
-         <p class="mb-4"><span class="font-bold pb-2">Follow Us On</span></p>
+         <p class="mb-4"><span class="font-bold pb-2" x-text="sidebar.titlemedia.data"></span></p>
      </div>
      <div class="flex flex-row space-x-4">
+        <template x-for="datamedia in sidebar.socialmedia.data">
          <div class="flex">
-         <a href="" :href="socialmedia.fb.data.link.data"><img src="/storage/photos/landy-theme/fb.png" :src="socialmedia.fb.data.logo.data" alt="" class="w-8 h-8"></a>
-     </div>
-      <div class="flex">
-         <a href="" :href="socialmedia.twitter.data.link.data"><img src="/storage/photos/landy-theme/social_twitter.png" :src="socialmedia.twitter.data.logo.data" alt="" class="w-8 h-8"></a>
-     </div>
-      <div class="flex">
-        <a href="" :href="socialmedia.linkedln.data.link.data"><img src="/storage/photos/landy-theme/linked.png" :src="socialmedia.linkedln.data.logo.data" alt="" class="w-8 h-8"></a>
-     </div>
+             <a href="" :href="datamedia.url.data.url"><img src="/storage/photos/landy-theme/fb.png"
+                     :src="datamedia.logo.data" alt="" class="w-8 h-8"></a>
+         </div>
+        </template>
+
      </div>
 
 

@@ -18,12 +18,12 @@
                      <div class="card-body">
                          <div class="flex ">
                              <div class="rounded-full  p-5 border-2 border-blue-700">
-                                 <img src="/storage/photos/1/capsule.png" :src="data.data.logo.data" alt="" class="w-6 object-cover">
+                                 <img src="/storage/photos/1/capsule.png" :src="data.logo.data" alt="" class="w-6 object-cover">
                              </div>
                          </div>
                          <div>
-                             <p class="font-semibold text-base lg:text-[20px] mb-2 lg:mb-5" x-text="data.data.title.data">Refreshing Design</p>
-                             <p class="text-sm lg:text-base" x-text="data.data.description.data">Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                             <p class="font-semibold text-base lg:text-[20px] mb-2 lg:mb-5" x-text="data.title.data">Refreshing Design</p>
+                             <p class="text-sm lg:text-base" x-text="data.description.data">Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                                  eirmod tempor ividunt labor dolore magna.</p>
                          </div>
                      </div>
