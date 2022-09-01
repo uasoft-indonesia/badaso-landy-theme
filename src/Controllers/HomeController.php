@@ -25,7 +25,7 @@ class HomeController extends Controller
                 'subject' => 'required|string',
                 'message' => 'required|string',
             ]);
-            $email_company = env('MAIL_FROM_ADDRESS');
+            $email_company = env('LANDY_MAIL_RECEIVER');
             Mail::to($email_company)->send(new SendEmail($request));
 
             return ApiResponse::success();
@@ -33,6 +33,11 @@ class HomeController extends Controller
 
             return ApiResponse::failed($e);
         }
+    }
+
+    public function gettest()
+    {
+        return view('landy-theme::pages.test');
     }
 
 }

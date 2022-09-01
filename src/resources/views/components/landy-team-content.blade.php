@@ -1,6 +1,6 @@
 <div class="bg-white">
         <div class="container lg:mx-auto max-w-[1280px] w-full px-4">
-            <div class="flex justify-center mt-7 lg:mt-15 mb-5">
+            <div class="flex justify-center pt-15 lg:pt-28 mb-5">
                 <div class="rounded-full border-2 border-blue-700 p-1 px-8">
                     <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="team.title.data">Our Team</span>
                 </div>
