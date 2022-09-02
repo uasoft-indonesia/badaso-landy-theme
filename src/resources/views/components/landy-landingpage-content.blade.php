@@ -1,4 +1,4 @@
- <div class="bg-blue-700">
+ <div class="bg-blue-700" id="#Home">
      <div class="container mx-auto max-w-[1280px] grid-cols-1 divide-y px-4  w-full pb-24">
          <div class="grid lg:grid-cols-12 pt-10 pr-4 gap-4 ">
              <div class="lg:col-span-6 self-center">

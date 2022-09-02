@@ -1,4 +1,4 @@
- <div class="bg-slate-50">
+ <div class="bg-slate-50" id="#Pricing">
         <div class="container lg:mx-auto max-w-[1280px] w-full">
             <div class="flex justify-center pt-15 lg:pt-28 mb-5">
                 <div class="rounded-full border-2 border-blue-700 p-1 px-8 ">

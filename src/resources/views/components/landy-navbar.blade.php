@@ -12,7 +12,7 @@
                    <div class="hidden lg:flex flex-1 pl-16 ">
                        <ul class="menu menu-horizontal p-0 font-medium text-slate-300 text-base">
                            <template x-for="menu in listnavbar">
-                               <li><a class="hover:text-white" x-text="menu.title.data.text">Home</a></li>
+                               <li><a class="hover:text-white" x-text="menu.title.data.text" :href="'{{env('APP_URL')}}' + '/'+ '{{env('LANDY_THEME_PREFIX')}}'+'#' + menu.title.data.text">Home</a></li>
                            </template>
 
                        </ul>
