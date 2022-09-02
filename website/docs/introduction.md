@@ -6,7 +6,7 @@ slug: /
 # Introduction
 
 <p align="center">
-  <a href="https://badaso-docs.uatech.co.id/">∑
+  <a href="https://badaso-docs.uatech.co.id/">
     <img src="img/badaso-module-logo.png" width="150px" alt="Badaso logo" />  
   </a>
 <p><b>badaso/landy-theme</b></p>
