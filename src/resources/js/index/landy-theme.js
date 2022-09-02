@@ -17,64 +17,98 @@ function initialize() {
 function loadDataContent() {
   return {
     navbar: null,
-    listnavbar:null,
+    listnavbar: null,
     content: null,
     landingpage: null,
-    story:null,
-    liststory:null,
-    service:null,
-    listservice:null,
-    video:null,
-    portfolio:null,
-    listportfolio:null,
-    pricing:null,
-    listpricing:null,
-    team:null,
-    infocontent:null,
-    review:null,
-    latestnews:null,
-    client:null,
-    listclient:null,
-    contact:null,
-    footer:null,
-    listfooter:null,
-    sidebar:null,
-    socialmedia:null,
-
-    slug: ["landy"],
-
-    loadLandingPage() {
+    story: null,
+    service: null,
+    listservice: null,
+    video: null,
+    portfolio: null,
+    listportfolio: null,
+    pricing: null,
+    listpricing: null,
+    team: null,
+    infocontent: null,
+    review: null,
+    latestnews: null,
+    client: null,
+    listclient: null,
+    contact: null,
+    footer: null,
+    listfooter: null,
+    sidebar: null,
+    dataPortfolio: [],
+    slug: ["landy-theme"],
+    category: null,
+    variabel: null,
+    loadLandyContent(variabel = this.variabel) {
+        this.variabel = variabel
       fetch(`/badaso-api/module/content/v1/content/fetch?slug=${this.slug[0]}`)
         .then((res) => res.json())
         .then((data) => {
           this.content = data.data.value;
           this.navbar = this.content.navbar.data;
-          this.listnavbar = this.navbar.listnavbar.data;
+          this.listnavbar = this.navbar.menulist.data;
           this.landingpage = this.content.landingpage.data;
-          this.story = this.content.storycontent.data;
-          this.liststory = this.story.listtab.data;
+          this.story = this.content.about.data;
           this.service = this.content.service.data;
-          this.listservice = this.service.listservice.data;
+          this.listservice = this.service.servicelist.data;
           this.video = this.content.video.data;
           this.portfolio = this.content.portfolio.data;
-          this.listportfolio = this.portfolio.listtabportfolio.data;
-          this.pricing = this.content.pricing.data;
-          this.listpricing = this.pricing.listprice.data;
+          this.pricing = this.content.price.data;
+          this.listpricing = this.pricing.list.data;
           this.team = this.content.team.data;
-          this.infocontent = this.content.information.data;
+          this.infocontent = this.content.callaction.data;
           this.review = this.content.review.data;
           this.latestnews = this.content.news.data;
           this.client = this.content.client.data;
-          this.listclient = this.client.listclient.data;
+          this.listclient = this.client.clientlist.data;
           this.contact = this.content.contact.data;
           this.footer = this.content.footer.data;
-          this.listfooter = this.footer.namefooter1.data;
+          this.listfooter = this.footer.footerlist.data;
           this.sidebar = this.content.sidebar.data;
-          this.socialmedia = this.sidebar.socialmedia.data;
-          console.log(this.sidebar, "coba");
+          this.listportfolio = this.portfolio.istPortfolio.data.portofolio.data;
+          console.log(this.listportfolio, 'data');
+          let datas = this.content.portfolio.data.listPortfolio.data.portofolio.data;
+
+           this.category = datas.map((data) => {
+
+             return (data = data.category.data);
+           });
+          this.dataPortfolio = datas.map((data,index) => {
+            if (datas[index].category.data == this.variabel) {
+                document.getElementsByClassName("cardview")[index].style.display = "block";
+            }else{
+                document.getElementsByClassName("cardview")[index].style.display = "none";
+            }
+            return data
+          });
         });
     },
+
   };
+}
+
+function tabs(){
+    return {
+      content: null,
+      portfolio: null,
+      slug: ["landy-theme"],
+
+      loadtab() {
+        fetch(
+          `/badaso-api/module/content/v1/content/fetch?slug=${this.slug[0]}`
+        )
+          .then((res) => res.json())
+          .then((data) => {
+             this.content = data.data.value;
+            this.portfolio = this.content.portfolio.data.listPortfolio.data.portofolio.data;
+            console.log(this.content,'test');
+          });
+      },
+    };
+
 }
 
 function isEmail(value) {
@@ -110,7 +144,7 @@ function contactForm() {
 
       this.buttonLabel = "Submitting...";
       this.loading = true;
-      fetch("/badaso-api/theme/landpro/v1/landpro/sendemail", {
+      fetch("/badaso-api/theme/landy/v1/landy/sendemail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -139,7 +173,6 @@ function contactForm() {
   };
 }
 
-
 // event jendela di-load
 google.maps.event.addDomListener(window, "load", initialize);
 
@@ -147,6 +180,7 @@ window.initialize = initialize;
 window.loadDataContent = loadDataContent;
 window.isEmail = isEmail;
 window.contactForm = contactForm;
+window.tabs = tabs;
 
 window.Alpine = Alpine;
 Alpine.start();

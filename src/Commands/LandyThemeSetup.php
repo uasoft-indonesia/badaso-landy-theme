@@ -89,6 +89,7 @@ class LandyThemeSetup extends Command
     {
         return [
             'LANDY_THEME_PREFIX' => 'landy',
+            'LANDY_MAIL_RECEIVER' =>'',
         ];
     }
 

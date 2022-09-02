@@ -19,7 +19,7 @@
          </div>
 
          <div class="carousel carousel-center   p-4 space-x-4  rounded-box pb-20 lg:pb-40">
-             <template x-for="list in review.listreview.data">
+             <template x-for="list in review.list.data">
                  <div class="carousel-item bg-white w-full lg:w-1/2 rounded-md">
                      <div class="card  ">
                          <div class="ml-8">
@@ -31,20 +31,20 @@
                              </svg>
                          </div>
                          <div class="card-body">
-                                 <span x-text="list.data.content.data" class="text-ellipsis overflow-hidden w-30">On the other hand denoun with righteous and
+                                 <span x-text="list.content.data" class="text-ellipsis overflow-hidden w-30">On the other hand denoun with righteous and
                                      disliks
                                  </span>
 
                              <div class="flex flex-row ">
                                  <div class="avatar">
                                      <div class="w-16 rounded-full">
-                                         <img src="https://placeimg.com/192/192/people" :src="list.data.avatar.data" class="object-cover" />
+                                         <img src="https://placeimg.com/192/192/people" :src="list.avatar.data" class="object-cover" />
                                      </div>
                                  </div>
 
                                  <div class="self-center px-4">
-                                     <p class="font-bold" x-text="list.data.name.data">Musharof Chowdhury</p>
-                                     <p x-text="list.data.position.data">Web Entrepreneur</p>
+                                     <p class="font-bold" x-text="list.name.data">Musharof Chowdhury</p>
+                                     <p x-text="list.position.data">Web Entrepreneur</p>
                                  </div>
                              </div>
                          </div>

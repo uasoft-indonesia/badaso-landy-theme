@@ -7,7 +7,7 @@
 </head>
 
 <body>
- <div x-data="loadDataContent()" x-init="loadLandingPage()">
+ <div x-data="loadDataContent()" x-init="loadLandyContent()">
         <div class="drawer drawer-end">
             <input id="my-drawer-sidebar" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content font-inter">
