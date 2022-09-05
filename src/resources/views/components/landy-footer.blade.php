@@ -10,8 +10,7 @@
                     <div class="pt-5 flex justify-center lg:justify-start">
                         <span x-text="footer.description.data"
                             class="text-center md:text-left text-gray-500 text-sm lg:text-base">
-                            Making the world a better place through constructing elegant
-                            hierarchies.</span>
+                           </span>
                     </div>
                     <div class="flex flex-col pt-10">
                         <div class="flex justify-center md:justify-start">
@@ -32,7 +31,7 @@
                 <div class="flex flex-col">
                     <div class="flex justify-center md:justify-start">
                         <span class="font-bold text-base lg:text-[20px]"
-                            x-text="listdata.title.data">Solutions</span>
+                            x-text="listdata.title.data"></span>
                     </div>
                     <div class="pt-5">
                         <ul class="list-none">
@@ -40,7 +39,7 @@
 
                                 <li class="pb-3 text-gray-500 text-center md:text-left text-sm lg:text-base"
                                     x-text="datalabel.title.data.text">
-                                    <a>Marketing</a>
+                                    <a></a>
                                 </li>
                             </template>
 
@@ -60,7 +59,7 @@
                     </div>
                     <div class="pt-5 flex justify-center md:justify-start">
                         <span x-text="footer.subscribe.data.description.data" class="text-center md:text-left text-gray-500 text-sm lg:text-base">
-                            Subscribe to our newsletter for the latest updates</span>
+                            </span>
                     </div>
                     <div class="pt-10">
 

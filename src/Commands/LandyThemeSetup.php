@@ -138,7 +138,7 @@ class LandyThemeSetup extends Command
 
         $decoded_json['dependencies']['daisyui'] = '^2.13.6';
         $decoded_json['dependencies']['alpinejs'] = '^3.10.2';
-
+        $decoded_json['dependencies']['glightbox'] = '^2.0.2';
         $decoded_json['dependencies']['tailwindcss'] = '^3.0.23';
         $decoded_json['devDependencies']['postcss'] = '^8.1.14';
 

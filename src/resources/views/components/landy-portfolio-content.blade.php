@@ -1,14 +1,12 @@
-  <div class="bg-white" id="#Portfolio">
+  <div class="bg-white" id="Portfolio">
       <div class="container lg:mx-auto max-w-[1280px] w-full px-4">
           <div class="flex justify-center mt-7 lg:mt-15 mb-5">
               <div class="rounded-full border-2 border-blue-700 p-1 px-8">
-                  <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="portfolio.title.data">Our
-                      Portfolio</span>
+                  <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="portfolio.title.data"></span>
               </div>
           </div>
           <div class="flex justify-center mb-5">
-              <span class="text-3xl lg:text-4xl font-bold text-center" x-text="portfolio.subtitle.data">Our Recent
-                  Works</span>
+              <span class="text-3xl lg:text-4xl font-bold text-center" x-text="portfolio.subtitle.data"></span>
           </div>
           <div class="flex justify-center mb-10 mx-5 lg:mx-96">
               <span class="text-center text-sm lg:text-base text-gray-500" x-text="portfolio.description.data">
@@ -90,13 +88,10 @@
                           </div>
                           <div>
                               <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer"
-                                  x-text="listdata.title.data">Graphics Design</span>
+                                  x-text="listdata.title.data"></span>
                           </div>
                           <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base"
-                                  x-text="listdata.description.data">Short
-                                  description for the ones who
-                                  look for something new.
-                                  Awesome!</span>
+                                  x-text="listdata.description.data"></span>
                           </div>
 
                       </div>
@@ -118,7 +113,7 @@
                           </div>
                           <div>
                               <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer"
-                                  x-text="listdata.title.data">Graphics Design</span>
+                                  x-text="listdata.title.data"></span>
                           </div>
                           <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base"
                                   x-text="listdata.description.data"></span>
@@ -143,7 +138,7 @@
                           </div>
                           <div>
                               <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer"
-                                  x-text="listportfolio[4].title.data">Graphics Design</span>
+                                  x-text="listportfolio[4].title.data"></span>
                           </div>
                           <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base"
                                   x-text="listportfolio[4].description.data"></span>
@@ -167,7 +162,7 @@
                           </div>
                           <div>
                               <span class="font-bold text-[20px] lg:text-[24px] cursor-pointer"
-                                  x-text="listportfolio[5].title.data">Graphics Design</span>
+                                  x-text="listportfolio[5].title.data"></span>
                           </div>
                           <div class="mt-2 lg:mt-3"> <span class="text-sm lg:text-base"
                                   x-text="listportfolio[5].description.data"></span>

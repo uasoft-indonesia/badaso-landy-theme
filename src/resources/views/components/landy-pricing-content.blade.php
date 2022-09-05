@@ -1,22 +1,21 @@
- <div class="bg-slate-50" id="#Pricing">
+ <div class="bg-slate-50" id="Pricing">
         <div class="container lg:mx-auto max-w-[1280px] w-full">
             <div class="flex justify-center pt-15 lg:pt-28 mb-5">
                 <div class="rounded-full border-2 border-blue-700 p-1 px-8 ">
-                    <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="pricing.title.data">Pricing</span>
+                    <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="pricing.title.data"></span>
                 </div>
             </div>
             <div class="flex justify-center mb-5">
-                <span class="text-3xl lg:text-4xl font-bold text-center" x-text="pricing.subtitle.data">Pricing & Plans</span>
+                <span class="text-3xl lg:text-4xl font-bold text-center" x-text="pricing.subtitle.data"></span>
             </div>
             <div class="flex justify-center mx-5 lg:mx-96">
-                <span class="text-center text-sm lg:text-base text-gray-500" x-text="pricing.description.data">There are many variations of passages of Lorem Ipsum available,but the
-                    majority have suffered alteration in some form.
+                <span class="text-center text-sm lg:text-base text-gray-500" x-text="pricing.description.data">
                 </span>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-12 mt-10 pb-24 gap-4 px-4 lg:mx-[30px]">
                 <template x-for="list in listpricing">
                 <div class="lg:col-span-4">
-                    <div class="card lg:w-96 bg-base-100 shadow-xl rounded-lg">
+                    <div class="card lg:w-96 bg-base-100 shadow-xl rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:shadow-md">
                         <div class="card-body">
                             <div class="flex justify-center mb-5">
                                 <div class="rounded-full border-2 border-blue-700 p-1 px-8 mt-5 ">
@@ -27,7 +26,7 @@
                                 <span class="text-center text-sm lg:text-base text-gray-500" x-text="list.description.data"></span>
                             </div>
                             <div class="flex justify-center mb-5">
-                                <span>$ <span class="font-bold text-5xl" x-text="list.price.data">150</span><span>/mo</span></span>
+                                <span>$ <span class="font-bold text-5xl" x-text="list.price.data"></span><span>/mo</span></span>
                             </div>
                             <div class="flex justify-center mb-5">
                                 <button
@@ -37,7 +36,7 @@
                             <div class="flex px-4">
                                 <ul class="list-disc text-base text-gray-500" x-data="list.benefit">
                                     <template x-for="databenefit in list.benefit.data.list.data">
-                                    <li class="pb-2" x-text="databenefit.description.data"> Cras justo odio.</li>
+                                    <li class="pb-2" x-text="databenefit.description.data"></li>
                                     </template>
 
                                 </ul>

@@ -1,4 +1,4 @@
- <div class="bg-slate-50">
+ <div class="bg-slate-50" id="About">
      <div class="container lg:mx-auto max-w-[1280px] w-full grid-cols-1 divide-y px-4">
 
          <div class="grid lg:grid-cols-12 pt-20 lg:pt-28 pr-4 pb-20">

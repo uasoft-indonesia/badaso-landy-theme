@@ -133,6 +133,15 @@ class LandyThemeContentsSeeder extends Seeder
                         "label": "Description",
                         "type": "text",
                         "data": "We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things."
+                    },
+                    "video": {
+                        "name": "video",
+                        "label": "Video Started",
+                        "type": "url",
+                        "data": {
+                            "url": "https://www.youtube.com/watch?v=NX_NW6bt6_s",
+                            "text": null
+                        }
                     }
                 }
             },
@@ -169,21 +178,7 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "title",
                                     "label": "Title",
                                     "type": "text",
-                                    "data": "Who We Are"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description",
-                                    "type": "text",
-                                    "data": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
-                                }
-                            },
-                            {
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title",
-                                    "type": "text",
-                                    "data": "Our Vision"
+                                    "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
                                 },
                                 "description": {
                                     "name": "description",
@@ -197,13 +192,27 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "title",
                                     "label": "Title",
                                     "type": "text",
-                                    "data": "Our History"
+                                    "data": null
                                 },
                                 "description": {
                                     "name": "description",
                                     "label": "Description",
                                     "type": "text",
                                     "data": "There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour."
+                                }
+                            },
+                            {
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title",
+                                    "type": "text",
+                                    "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description",
+                                    "type": "text",
+                                    "data": null
                                 }
                             }
                         ]
@@ -372,9 +381,15 @@ class LandyThemeContentsSeeder extends Seeder
                         "label": "URL Video",
                         "type": "url",
                         "data": {
-                            "url": "#",
+                            "url": "https://www.youtube.com/watch?v=NX_NW6bt6_s",
                             "text": null
                         }
+                    },
+                    "bgvideo": {
+                        "name": "bgvideo",
+                        "label": "Background Video",
+                        "type": "image",
+                        "data": "photos/1/video-bg.png"
                     },
                     "title": {
                         "name": "title",
@@ -418,6 +433,133 @@ class LandyThemeContentsSeeder extends Seeder
                         "label": "Description",
                         "type": "text",
                         "data": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+                    },
+                    "portfoliolist": {
+                        "name": "portfoliolist",
+                        "label": "Portfolio List",
+                        "type": "array",
+                        "data": [
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf1.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "Graphics Design"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            },
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf2.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "Web Development"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            },
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf3.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "App Development"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            },
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf2.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "Digital Marketing"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            },
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf1.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "SEO Services"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            },
+                            {
+                                "image": {
+                                    "name": "image",
+                                    "label": "Image Project",
+                                    "type": "image",
+                                    "data": "photos/1/pf3.jpeg"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Project",
+                                    "type": "text",
+                                    "data": "Product Design"
+                                },
+                                "description": {
+                                    "name": "description",
+                                    "label": "Description Project",
+                                    "type": "text",
+                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                }
+                            }
+                        ]
                     }
                 }
             },
@@ -930,7 +1072,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/graygrids.svg"
+                                    "data": "photos/1/aws.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "AWS"
                                 }
                             },
                             {
@@ -938,7 +1086,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/uideck.svg"
+                                    "data": "photos/1/azure.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Azure"
                                 }
                             },
                             {
@@ -946,7 +1100,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/ayroui.svg"
+                                    "data": "photos/1/cloud-host.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "IDCloudHost"
                                 }
                             }
                         ]
@@ -961,7 +1121,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/lineicons.svg"
+                                    "data": "photos/1/google-cloud.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Google Cloud"
                                 }
                             },
                             {
@@ -969,7 +1135,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/tailwindtemplates.svg"
+                                    "data": "photos/1/alibaba.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Alibaba Cloud"
                                 }
                             },
                             {
@@ -977,7 +1149,13 @@ class LandyThemeContentsSeeder extends Seeder
                                     "name": "logo",
                                     "label": "Client Logo",
                                     "type": "image",
-                                    "data": "photos/1/ecomhtml.svg"
+                                    "data": "photos/1/digital-ocean.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Digital Ocean"
                                 }
                             }
                         ]
@@ -1306,8 +1484,14 @@ class LandyThemeContentsSeeder extends Seeder
                                     "type": "url",
                                     "data": {
                                         "url": "#",
-                                        "text": "About Us"
+                                        "text": "About"
                                     }
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title",
+                                    "type": "text",
+                                    "data": "About Us"
                                 }
                             },
                             {
@@ -1317,8 +1501,14 @@ class LandyThemeContentsSeeder extends Seeder
                                     "type": "url",
                                     "data": {
                                         "url": "#",
-                                        "text": "Our Team"
+                                        "text": "Team"
                                     }
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title",
+                                    "type": "text",
+                                    "data": "Our Team"
                                 }
                             },
                             {
@@ -1328,19 +1518,14 @@ class LandyThemeContentsSeeder extends Seeder
                                     "type": "url",
                                     "data": {
                                         "url": "#",
-                                        "text": "Latest News"
+                                        "text": "Contact"
                                     }
-                                }
-                            },
-                            {
-                                "label": {
-                                    "name": "label",
-                                    "label": "Links Label",
-                                    "type": "url",
-                                    "data": {
-                                        "url": "#",
-                                        "text": "Contact Us"
-                                    }
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title",
+                                    "type": "text",
+                                    "data": "Contact Us"
                                 }
                             }
                         ]
