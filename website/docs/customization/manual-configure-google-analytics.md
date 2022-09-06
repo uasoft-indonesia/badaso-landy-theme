@@ -4,12 +4,13 @@ sidebar_position: 3
 
 # Google Analytics Configuration Alternative
 
-Alternatif konfigurasi ini digunakan ketika hit google analytics tidak berjalan pada badaso landy theme 
+This configuration alternative is used when hit google analytics is not running on badaso landy theme.
 
-1. Pada `.env` tambahkan konfigurasi baru pada kunci `MIX_ANALYTICS_TRACKING_ID`
-2. Pada `resources/views` buat folder dengan nama `partials`
-3. Pada folder `resources/views/partials` buat file blade dengan nama `google-analytics.blade.php` dengan isi sebagai berikut :
-```
+1. In `.env` add new configuration on `MIX_ANALYTICS_TRACKING_ID` key
+2. In `resources/views` create a folder named `partials`
+3. In the resources/views/partials folder create a blade file with the name google-analytics.blade.php with the following contents:
+
+```php
 @php
 $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 // output : UA-2155XXXXX-X
@@ -52,10 +53,12 @@ $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 </script>
 
 ```
-4. Pada `resources/views` buat folder dengan nama `vendor/landy-theme`
-5. Salin file `vendor/badaso/landy-theme/src/resources/views/app.blade.php` ke folder `resources/views/vendor/landy-theme`
-6. Memanggil `resources/views/partials/google-analytics.blade.php` pada `resources/views/vendor/landy-theme/app.blade.php`
-```
+
+4. In `resources/views` create a folder `named vendor/landy-theme`
+5. Copy the `vendor/badaso/landy-theme/src/resources/views/app.blade.php` file to the `resources/views/vendor/landy-theme` folder
+6. Calling `resources/views/partials/google-analytics.blade.php` in `resources/views/vendor/landy-theme/app.blade.php`
+
+```php
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,3 +75,7 @@ $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 ...
 </html>
 ```
+
+
+
+

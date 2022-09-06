@@ -7,9 +7,12 @@
                 <span class="text-center text-white text-sm lg:text-base " x-text="infocontent.description.data"></span>
             </div>
             <div class="flex justify-center pb-10 lg:pb-20">
+                <a
+                                     :href="'{{ env('APP_URL') }}' + '/' + '{{ env('LANDY_THEME_PREFIX') }}' + '#' + 'Contact'">
                 <button
                     class="btn btn-outline bg-blue-700  text-white tracking-[.08em] font-bold hover:bg-white rounded-md hover:border-none hover:text-blue-700 px-8">Get
                     Started</button>
+                </a>
 
             </div>
         </div>

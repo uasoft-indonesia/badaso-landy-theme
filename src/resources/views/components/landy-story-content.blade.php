@@ -21,12 +21,12 @@
 
                  <div class="tabs tabs-boxed pt-5 pb-5 gap-4 px-4 mt-10 mb-10">
                      <div class="grid lg:grid-cols-3 gap-4 w-full lg:w-3/4">
-                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700" x-data="loadDataContent()"
-                             x-on:click="tab_profile()">Who We Are</button>
-                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700" x-data="loadDataContent()"
-                             x-on:click="tab_dashboard()">Our Vision</button>
-                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700" x-data="loadDataContent()"
-                             x-on:click="tab_about()">Our History</button>
+                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700"
+                             x-on:click="tab_profile()"><span x-text="titletabs[0].title.data">Who We Are</span></button>
+                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700"
+                             x-on:click="tab_dashboard()"><span x-text="titletabs[1].title.data">Our Vision</span></button>
+                         <button class="btn btn-outline border-none bg-white hover:bg-blue-700"
+                             x-on:click="tab_about()"><span x-text="titletabs[2].title.data">Our History</span></button>
                      </div>
 
                  </div>

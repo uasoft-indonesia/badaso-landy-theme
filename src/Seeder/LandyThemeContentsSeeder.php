@@ -25,7 +25,7 @@ class LandyThemeContentsSeeder extends Seeder
                     'slug' => 'landy-theme',
                     'label' => 'Landy Theme',
                     'value' => '{
-                         "navbar": {
+                        "navbar": {
                 "name": "navbar",
                 "label": "Navbar",
                 "type": "group",
@@ -167,6 +167,37 @@ class LandyThemeContentsSeeder extends Seeder
                         "label": "Description",
                         "type": "text",
                         "data": "Our team comes with the experience and knowledge"
+                    },
+                    "titlebutton": {
+                        "name": "titlebutton",
+                        "label": "Title Tabs Button",
+                        "type": "array",
+                        "data": [
+                            {
+                                "title": {
+                                    "name": "title",
+                                    "label": "title",
+                                    "type": "text",
+                                    "data": "WHO WE ARE"
+                                }
+                            },
+                            {
+                                "title": {
+                                    "name": "title",
+                                    "label": "title",
+                                    "type": "text",
+                                    "data": "OUR VISION"
+                                }
+                            },
+                            {
+                                "title": {
+                                    "name": "title",
+                                    "label": "title",
+                                    "type": "text",
+                                    "data": "OUR HISTORY"
+                                }
+                            }
+                        ]
                     },
                     "tabs": {
                         "name": "tabs",

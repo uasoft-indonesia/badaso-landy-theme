@@ -73,7 +73,7 @@ class LandyThemeSetup extends Command
              mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
              .js("vendor/badaso/landy-theme/src/resources/js/index/landy-theme.js", "public/js/index/landy-theme.js")
         .css("vendor/badaso/landy-theme/src/resources/js/assets/css/style.css","public/css/landy-theme.css",{},[
-        require("tailwindcss")('./tailwind-landy.config.js'),
+        require("tailwindcss")('./tailwind.config.js'),
         require("autoprefixer"),
         ]
         )

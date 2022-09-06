@@ -16,7 +16,7 @@ Untuk mengganti controller, Anda dapat mengikuti langkah-langkah berikut:
 kembali [
      ...,
 
-     'pengontrol' => [
+     'Controller' => [
          'ExampleController' => 'App\Http\Controllers\ExampleController',
      ],
 ];

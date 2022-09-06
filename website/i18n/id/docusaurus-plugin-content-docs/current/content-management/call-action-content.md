@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Untuk mengatur menu tampilan halaman panggilan cepat di tema landy, kamu bisa mengikuti langkah-langkah berikut :
 1. Kamu bisa membuka menu `Content Manager` di badaso dashboard
-2. Pilih item `Landy` and pilih `Fill Content' pada button aksi
+2. Pilih item `Landy Theme` and pilih `Fill Content' pada button aksi
 3. Masukan teks konten panggilan cepat  pada form konten panggilan cepat
 <p align="center">
    <a href="https://badaso-docs.uatech.co.id/">
