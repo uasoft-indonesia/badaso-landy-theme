@@ -11,7 +11,7 @@
                          x-text="landingpage.description.data">
 
                      </span>
-                    
+
                  </div>
                  <div class="mt-8">
                      <div class="flex space-x-4">
