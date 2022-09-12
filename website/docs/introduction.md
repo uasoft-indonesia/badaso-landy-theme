@@ -15,7 +15,6 @@ slug: /
 <p align="left">Official landy theme for <a href="https://github.com/uasoft-indonesia/badaso">badaso module</a></p>
 <p align="left">Landy Theme is free theme on badaso, create landy theme site faster.</p>
 <p align="left">Build with Tailwindcss & Alpinejs</p>
-
 <br />
 
 <p align="center">
@@ -24,7 +23,7 @@ slug: /
 
 <p align="center">
   <a href="https://badaso-docs.uatech.co.id/">
-    <img src="http://localhost:3000/img/badaso-landy-theme-preview.png" alt="screencapture-badaso-dashboard-uatech-co-id-dashboard-crud-2021-03-17-09-57-08-1" />
+    <img src="/img/badaso-landy-theme-preview.png" alt="" />
   </a>
 </p>
 
