@@ -1,5 +1,4 @@
 import Alpine from "alpinejs";
-import Glightbox from "glightbox";
 
 // fungsi initialize untuk mempersiapkan peta
 function initialize() {
@@ -262,4 +261,4 @@ window.subscribe = subscribe;
 window.Alpine = Alpine;
 Alpine.start();
 
-window.Glightbox = Glightbox;
+
