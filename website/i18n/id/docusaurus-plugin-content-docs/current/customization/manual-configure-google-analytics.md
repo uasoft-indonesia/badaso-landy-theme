@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Google Analytics Configuration Alternative
 
-Alternatif konfigurasi ini digunakan ketika hit google analytics tidak berjalan pada badaso landpro theme 
+Alternatif konfigurasi ini digunakan ketika hit google analytics tidak berjalan pada badaso landy theme 
 
 1. Pada `.env` tambahkan konfigurasi baru pada kunci `MIX_ANALYTICS_TRACKING_ID`
 2. Pada `resources/views` buat folder dengan nama `partials`
@@ -52,9 +52,9 @@ $measurement_id = env('MIX_ANALYTICS_TRACKING_ID', null);
 </script>
 
 ```
-4. Pada `resources/views` buat folder dengan nama `vendor/landpro-theme`
-5. Salin file `vendor/badaso/landpro-theme/src/resources/views/app.blade.php` ke folder `resources/views/vendor/landpro-theme`
-6. Memanggil `resources/views/partials/google-analytics.blade.php` pada `resources/views/vendor/landpro-theme/app.blade.php`
+4. Pada `resources/views` buat folder dengan nama `vendor/landy-theme`
+5. Salin file `vendor/badaso/landy-theme/src/resources/views/app.blade.php` ke folder `resources/views/vendor/landy-theme`
+6. Memanggil `resources/views/partials/google-analytics.blade.php` pada `resources/views/vendor/landy-theme/app.blade.php`
 ```
 <!DOCTYPE html>
 <html lang="en">

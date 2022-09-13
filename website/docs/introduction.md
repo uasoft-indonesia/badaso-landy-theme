@@ -12,11 +12,13 @@ slug: /
 <p><b>badaso/landy-theme</b></p>
 </p>
 
-<p align="left">Official free theme for landing page with <a href="https://github.com/uasoft-indonesia/badaso-content-module">badaso content module</a></p>
+<p align="left">Official landy theme for <a href="https://github.com/uasoft-indonesia/badaso">badaso module</a></p>
+<p align="left">Landy Theme is free theme on badaso, create landy theme site faster.</p>
+<p align="left">Build with Tailwindcss & Alpinejs</p>
 <br />
 
 <p align="center">
-  <p align="center"><a href="https://badaso-demo.uatech.co.id/landpro" target="_blank">Try live demo</a></p>
+  <p align="center"><a href="https://badaso-demo.uatech.co.id/landy" target="_blank">Try live demo</a></p>
 </p>
 
 <p align="center">

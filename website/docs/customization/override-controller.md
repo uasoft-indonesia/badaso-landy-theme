@@ -7,8 +7,7 @@ sidebar_position: 1
 To override the controller, you can follow the following steps:
 
 - Create a new controller by using below command.
-
-`php artisan make:controller ExampleController`
+  `php artisan make:controller ExampleController`
 
 - After the new controller is created, you can override the controller by registering the controller in the `config/badaso-landy-theme.php` file in `controllers` section. For example:
 
@@ -21,5 +20,7 @@ return [
     ],
 ];
 ```
+
+- You can see the available keys of overrides in the `vendor/badaso/landy-theme/src/Routes/api.php` file.
 
 Note: All controllers in the Landy Theme are invoke controllers.

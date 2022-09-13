@@ -12,10 +12,12 @@ slug: /
   <p>badaso/landy-theme</p>
 </p>
 
-<p align="left">Tampilan perdagangan resmi untuk <a href="https://github.com/uasoft-indonesia/badaso-landy-theme">badaso landy theme module</a></p>
-<p align="left">Pengembangan nol untuk tampilan blog di badaso, buat tampilan blog lebih cepat.</p>
+<p align="left">Tema Landy resmi untuk <a href="https://github.com/uasoft-indonesia/badaso">badaso module</a></p>
+<p align="left">Tema Landy adalah tema gratis badaso, buat situs tema landy dengan cepat.</p>
+<p align="left">Dibangun menggunkan Tailwindcss & Alpinejs</p>
+
 <br />
 
 <p align="center">
-  <p align="center"><a href="https://badaso-demo.uatech.co.id/post" target="_blank">Coba demo langsung</a></p>
+  <p align="center"><a href="https://badaso-demo.uatech.co.id/landy" target="_blank">Coba demo langsung</a></p>
 </p>

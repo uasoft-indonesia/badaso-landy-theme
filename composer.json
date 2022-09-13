@@ -24,8 +24,8 @@
     "require": {
         "symfony/var-exporter": "*",
         "badaso/content-module": "*",
-        "badaso/core": "^2.4.13",
-        "badaso/post-module": "^2.2.1"
+        "badaso/core": "^2.4.13"
+
     },
     "authors": [{
         "name": "UASOFT",

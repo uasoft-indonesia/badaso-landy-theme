@@ -42,8 +42,11 @@ function loadDataContent() {
     slug: ["landy-theme"],
     category: null,
     variabel: null,
-    loadLandyContent(variabel = this.variabel) {
-        this.variabel = variabel
+    slice: [],
+    slice2: [],
+    abouttabs: [],
+    titletabs: [],
+    loadLandyContent() {
       fetch(`/badaso-api/module/content/v1/content/fetch?slug=${this.slug[0]}`)
         .then((res) => res.json())
         .then((data) => {
@@ -52,10 +55,13 @@ function loadDataContent() {
           this.listnavbar = this.navbar.menulist.data;
           this.landingpage = this.content.landingpage.data;
           this.story = this.content.about.data;
+          this.abouttabs = this.story.tabs.data;
+          this.titletabs = this.story.titlebutton.data;
           this.service = this.content.service.data;
           this.listservice = this.service.servicelist.data;
           this.video = this.content.video.data;
           this.portfolio = this.content.portfolio.data;
+          this.listportfolio = this.portfolio.portfoliolist.data;
           this.pricing = this.content.price.data;
           this.listpricing = this.pricing.list.data;
           this.team = this.content.team.data;
@@ -68,47 +74,79 @@ function loadDataContent() {
           this.footer = this.content.footer.data;
           this.listfooter = this.footer.footerlist.data;
           this.sidebar = this.content.sidebar.data;
-          this.listportfolio = this.portfolio.istPortfolio.data.portofolio.data;
-          console.log(this.listportfolio, 'data');
-          let datas = this.content.portfolio.data.listPortfolio.data.portofolio.data;
 
-           this.category = datas.map((data) => {
-
-             return (data = data.category.data);
-           });
-          this.dataPortfolio = datas.map((data,index) => {
-            if (datas[index].category.data == this.variabel) {
-                document.getElementsByClassName("cardview")[index].style.display = "block";
-            }else{
-                document.getElementsByClassName("cardview")[index].style.display = "none";
-            }
-            return data
-          });
+          this.slice = Object.keys(this.portfolio.portfoliolist.data)
+            .slice(0, 3)
+            .reduce((result, key) => {
+              result[key] = this.portfolio.portfoliolist.data[key];
+              return result;
+            }, {});
+          this.slice2 = Object.keys(this.portfolio.portfoliolist.data)
+            .slice(2, 5)
+            .reduce((result, key) => {
+              result[key] = this.portfolio.portfoliolist.data[key];
+              return result;
+            }, {});
+          document.getElementById("branding_tabs").style.display = "none";
+          document.getElementById("marketing").style.display = "none";
+          document.getElementById("planning").style.display = "none";
+          document.getElementById("research").style.display = "none";
+          document.getElementById("dashboard").style.display = "none";
+          document.getElementById("history").style.display = "none";
         });
     },
+    taball() {
+      document.getElementById("all_tabs").style.display = "inherit";
+      document.getElementById("branding_tabs").style.display = "none";
+      document.getElementById("marketing").style.display = "none";
+      document.getElementById("planning").style.display = "none";
+      document.getElementById("research").style.display = "none";
+    },
 
+    tabcategory() {
+      document.getElementById("branding_tabs").style.display = "inherit";
+      document.getElementById("all_tabs").style.display = "none";
+      document.getElementById("marketing").style.display = "none";
+      document.getElementById("planning").style.display = "none";
+      document.getElementById("research").style.display = "none";
+    },
+    tab_marketing() {
+      document.getElementById("marketing").style.display = "inherit";
+      document.getElementById("branding_tabs").style.display = "none";
+      document.getElementById("all_tabs").style.display = "none";
+      document.getElementById("planning").style.display = "none";
+      document.getElementById("research").style.display = "none";
+    },
+    tab_planning() {
+      document.getElementById("planning").style.display = "inherit";
+      document.getElementById("branding_tabs").style.display = "none";
+      document.getElementById("all_tabs").style.display = "none";
+      document.getElementById("marketing").style.display = "none";
+      document.getElementById("research").style.display = "none";
+    },
+    tab_research() {
+      document.getElementById("research").style.display = "inherit";
+      document.getElementById("branding_tabs").style.display = "none";
+      document.getElementById("all_tabs").style.display = "none";
+      document.getElementById("marketing").style.display = "none";
+      document.getElementById("planning").style.display = "none";
+    },
+    tab_profile() {
+      document.getElementById("profile").style.display = "inherit";
+      document.getElementById("dashboard").style.display = "none";
+      document.getElementById("history").style.display = "none";
+    },
+    tab_dashboard() {
+      document.getElementById("dashboard").style.display = "inherit";
+      document.getElementById("profile").style.display = "none";
+      document.getElementById("history").style.display = "none";
+    },
+    tab_about() {
+      document.getElementById("history").style.display = "inherit";
+      document.getElementById("profile").style.display = "none";
+      document.getElementById("dashboard").style.display = "none";
+    },
   };
-}
-
-function tabs(){
-    return {
-      content: null,
-      portfolio: null,
-      slug: ["landy-theme"],
-
-      loadtab() {
-        fetch(
-          `/badaso-api/module/content/v1/content/fetch?slug=${this.slug[0]}`
-        )
-          .then((res) => res.json())
-          .then((data) => {
-             this.content = data.data.value;
-            this.portfolio = this.content.portfolio.data.listPortfolio.data.portofolio.data;
-            console.log(this.content,'test');
-          });
-      },
-    };
-
 }
 
 function isEmail(value) {
@@ -152,13 +190,51 @@ function contactForm() {
         body: JSON.stringify(this.formData),
       })
         .then((response) => {
-          console.log(response, "res");
           if (response.ok) {
             (this.formData.name = ""),
               (this.formData.email = ""),
               (this.formData.phone = ""),
               (this.formData.subject = ""),
               (this.formData.message = ""),
+              alert("Thank you for your message!");
+          } else {
+            throw new Error(`Something went wrong: ${response.statusText}`);
+          }
+        })
+        .catch((errors) => console.error(errors))
+        .finally(() => {
+          this.loading = false;
+          this.buttonLabel = "Send Message";
+        });
+    },
+  };
+}
+
+
+function subscribe() {
+  return {
+    formData: {
+      email: "",
+    },
+
+    loading: false,
+
+    submitemail() {
+      if (!this.formData.email.length) {
+        alert("Please fill out all required field and try again!");
+        return;
+      }
+      this.loading = true;
+      fetch("/badaso-api/theme/landy/v1/landy/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.formData),
+      })
+        .then((response) => {
+          if (response.ok) {
+              (this.formData.email = ""),
               alert("Thank you for your message!");
           } else {
             throw new Error(`Something went wrong: ${response.statusText}`);
@@ -180,7 +256,9 @@ window.initialize = initialize;
 window.loadDataContent = loadDataContent;
 window.isEmail = isEmail;
 window.contactForm = contactForm;
-window.tabs = tabs;
+window.subscribe = subscribe;
 
 window.Alpine = Alpine;
 Alpine.start();
+
+
