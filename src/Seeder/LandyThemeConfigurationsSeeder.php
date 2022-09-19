@@ -23,7 +23,7 @@ class LandyThemeConfigurationsSeeder extends Seeder
         try {
             $settings = [
                 0 => [
-                    'key'          => 'LandyThemeNavbarTitle',
+                    'key'          => 'landyThemeNavbarTitle',
                     'display_name' => 'Navigation Bar Title',
                     'value'        => 'Landy Theme',
                     'details'      => '',
@@ -33,23 +33,35 @@ class LandyThemeConfigurationsSeeder extends Seeder
                     'can_delete'   => 0,
                 ],
                 1 => [
-                    'key'          => 'LandyThemeFacebookId',
-                    'display_name' => 'Facebook ID for comment',
+                    'key'          => 'landyThemePrefixUrl',
+                    'display_name' => 'Landy Theme prefix URL',
                     'value'        => '',
                     'details'      => '',
                     'type'         => 'text',
                     'order'        => 2,
                     'group'        => 'landyTheme',
                     'can_delete'   => 0,
+
                 ],
                 2 => [
-                    'key'          => 'LandyThemeAdsId',
-                    'display_name' => 'Advertisement column',
-                    'value'        => '',
+                    'key'          => 'landyThemeIcon',
+                    'display_name' => 'Icon Theme',
+                    'value'        => 'photos/1/full-logo-badaso.png',
                     'details'      => '',
-                    'type'         => 'type_image',
+                    'type'         => 'upload_image',
                     'order'        => 3,
                     'group'        => 'landyTheme',
+                    'can_delete'   => 0,
+
+                ],
+                3 => [
+                    'key'          => 'landyThemeIconFooter',
+                    'display_name' => 'Icon Theme Footer',
+                    'value'        => 'photos/1/full-logo-badaso.png',
+                    'details'      => '',
+                    'type'         => 'upload_image',
+                    'order'        => 4,
+                    'group'        => 'menitTheme',
                     'can_delete'   => 0,
                 ],
             ];

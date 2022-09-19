@@ -33,7 +33,7 @@ class LandyThemeServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../Seeder'                       => database_path('seeders/Badaso/LandyTheme'),
             __DIR__.'/../Config/badaso-landy-theme.php' => config_path('badaso-landy-theme.php'),
-            __DIR__.'/../Images/thumbnail-landy/' => storage_path('app/public/photos/1'),
+            __DIR__.'/../Images/landy-img/' => storage_path('app/public/photos/1'),
             __DIR__.'/../resources/customization/'     => resource_path('js/badaso/theme/landy-theme/'),
             __DIR__ . '/../Tailwind/'                      => base_path(),
         ], 'BadasoLandyTheme');

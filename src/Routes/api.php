@@ -12,6 +12,7 @@ Route::group(['prefix' => $api_route_prefix, 'as' => 'badaso.', 'middleware' => 
     Route::group(['prefix' => 'theme/landy/v1'], function () {
         Route::group(['prefix' => 'landy'], function (){
             Route::post('/sendemail', HelpersRoute::getController('HomeController@sendEmail'));
+            Route::post('/subscribe', HelpersRoute::getController('HomeController@subscribe'));
 
         });
     });

@@ -21,30 +21,22 @@ php artisan badaso:setup
 php artisan badaso-content:setup
 ```
 
-4. (Optional) Jalankan perintah berikut untuk mengatur badaso-post. Jika Anda tidak pernah menjalankannya sebelumnya.
-
-```
-php artisan badaso-post:setup
-```
-
-5. Jalankan perintah berikut untuk mengatur tema
+4. Jalankan perintah berikut untuk mengatur tema
 
 ```
 php artisan badaso-landy-theme:setup
 ```
 
-6. Jalankan perintah berikut untuk migrate database.
+5. Jalankan perintah berikut untuk migrate database.
 
 ```
 php artisan migrate
 ```
 
-7. (Pilihan) Jalankan perintah berikut untuk generate seeder dari badaso core, content module dan post module. Jika Anda tidak pernah menjalankannya sebelumnya.
+6. (Pilihan) Jalankan perintah berikut untuk generate seeder dari badaso core, dan content module. Jika Anda tidak pernah menjalankannya sebelumnya.
 
 ```
 php artisan db:seed --class="Database\Seeders\Badaso\BadasoSeeder"
-
-php artisan db:seed --class="Database\Seeders\Badaso\Post\BadasoPostModuleSeeder"
 
 php artisan db:seed --class="Database\Seeders\Badaso\Content\BadasoContentModuleSeeder"
 ```
@@ -55,15 +47,15 @@ php artisan db:seed --class="Database\Seeders\Badaso\Content\BadasoContentModule
 php artisan db:seed --class='Database\Seeders\Badaso\LandyTheme\BadasoLandyThemeSeeder'
 ```
 
-9. Tambahkan plugins pada MIX_POST_URL_PREFIX untuk .env.
+9. Tambahkan plugins pada MIX_BADASO_PLUGINS untuk .env.
 
 ```
-MIX_BADASO_PLUGINS=content-module,post-module,landy-theme
+MIX_BADASO_PLUGINS=content-module,landy-theme
 ```
 
 10. Tambahkan menu plugins  ke MIX_BADASO_MENU anda pada .env.Jika anda memiliki menu lain, tambahkan mereka setelah koma (,).
 ```
-MIX_BADASO_MENU=${MIX_DEFAULT_MENU},content-module,post-module,landy-theme
+MIX_BADASO_MENU=${MIX_DEFAULT_MENU},content-module,landy-theme
 ```
 
 11. Install JS depedency

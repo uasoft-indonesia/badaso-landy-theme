@@ -1,4 +1,5 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html data-theme="light">
 
 <head>
@@ -7,7 +8,7 @@
 </head>
 
 <body>
- <div x-data="loadDataContent()" x-init="loadLandingPage()">
+ <div x-data="loadDataContent()" x-init="loadLandyContent()">
         <div class="drawer drawer-end">
             <input id="my-drawer-sidebar" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content font-inter">
@@ -30,3 +31,12 @@
 </body>
 
 </html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+<script type="text/javascript">
+  var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+</script>

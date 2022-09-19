@@ -14,3 +14,16 @@ To manage your menu sidebar content on the landy theme, you can follow the step 
   </a>
 </p>
 
+4. Input menu quick link sidebar, image sociamedia contact to the sidebar content form
+<p align="center">
+  <a href="https://badaso-docs.uatech.co.id/">
+    <img src="http://localhost:3000/img/quick-link.png" alt="screencapture-badaso-dashboard-uatech-co-id-dashboard-crud-2021-03-17-09-57-08-1" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://badaso-docs.uatech.co.id/">
+    <img src="http://localhost:3000/img/social-media.png" alt="screencapture-badaso-dashboard-uatech-co-id-dashboard-crud-2021-03-17-09-57-08-1" />
+  </a>
+</p>
+

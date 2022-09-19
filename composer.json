@@ -1,5 +1,5 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "badaso/landy-theme",
     "description": "Official theme for landy system on badaso",
     "keywords": [
@@ -24,8 +24,8 @@
     "require": {
         "symfony/var-exporter": "*",
         "badaso/content-module": "*",
-        "badaso/core": "^2.4.13",
-        "badaso/post-module": "^2.2.1"
+        "badaso/core": "^2.4.13"
+
     },
     "authors": [{
         "name": "UASOFT",
