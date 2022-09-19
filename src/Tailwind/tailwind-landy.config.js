@@ -2,7 +2,7 @@ module.exports = {
   purge: ["./vendor/badaso/landy-theme/src/resources/**/*.php"],
   content: [],
 
-  plugins: [require("daisyui"), require("@tailwindcss/aspect-ratio")],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: ["light", "cupcake"],
   },
