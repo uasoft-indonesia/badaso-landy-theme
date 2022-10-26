@@ -3,8 +3,8 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-12 pt-10 pb-20 gap-4 px-4">
             <div class="lg:col-span-4">
                 <div class="flex flex-col">
-                    <div class="flex justify-center md:justify-start">
-                        <img src="https://badaso-docs.uatech.co.id/img/full-logo-badaso.png" :src="footer.logo.data"
+                    <div class="flex justify-center md:justify-start" x-data="loadDataContent()" x-init="loadDataConfiguration()">
+                        <img :src="footerlogo"
                             alt="" class="w-32">
                     </div>
                     <div class="pt-5 flex justify-center lg:justify-start">

@@ -3,8 +3,8 @@
            <div class="navbar">
                <div class="flex flex-row h-20 justify-between  w-full">
                    <div class="flex-none justify-start">
-                       <div class="max-w-[150px] lg:w-[184px]">
-                           <a href="https://badaso-docs.uatech.co.id/"><img src="https://i.postimg.cc/kMWqcZ9T/Full-logo-badaso-1.png" :src="navbar.logo.data"
+                       <div class="max-w-[150px] lg:w-[184px]" x-data="loadDataContent()" x-init="loadDataConfiguration()">
+                           <a href="https://badaso-docs.uatech.co.id/"><img :src="navbarlogo"
                                class="w-full h-[39px] object-cover" alt=""></a>
                        </div>
 
@@ -18,7 +18,7 @@
                        </ul>
                    </div>
 
-                   <div class=" flex-none justify-end">
+                   <div class="flex-none justify-end">
 
                        <label for="my-drawer-sidebar"
                            class="drawer-button btn btn-circle bg-blue-700 border-slate-300 hover:bg-blue-800 hover:border-slate-300">

@@ -1,16 +1,18 @@
  <div class="bg-slate-50">
-     <div class="container lg:mx-auto max-w-[1280px] w-full pb-20 px-4">
-         <div class="flex justify-center mb-5 pt-15 lg:pt-28">
-             <div class="rounded-full border-2 border-blue-700 p-1 px-8">
-                 <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="video.title.data"></span>
+     <div class="container lg:mx-auto max-w-[1280px] w-full pt-12 pb-12 lg:pt-[100px] lg:pb-[100px] px-4">
+         <div class="flex flex-col max-w-[820px] w-full items-center justify-center mx-auto space-y-5 mb-7">
+             <div class="flex">
+                 <div class="rounded-full border-2 border-blue-700 p-1 px-8">
+                     <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="video.title.data"></span>
+                 </div>
              </div>
-         </div>
-         <div class="flex justify-center mb-5">
-             <span class="text-3xl lg:text-4xl font-bold text-center" x-text="video.subtitle.data"></span>
-         </div>
-         <div class="flex justify-center mb-5 mx-5 lg:mx-96">
-             <span class="text-center text-sm lg:text-base text-gray-500" x-text="video.description.data">
-             </span>
+             <div class="flex">
+                 <span class="text-3xl lg:text-4xl font-bold text-center" x-text="video.subtitle.data"></span>
+             </div>
+             <div class="flex">
+                 <span class="text-center text-sm lg:text-base text-gray-500" x-text="video.description.data">
+                 </span>
+             </div>
          </div>
 
          <div class="flex items-center justify-center mb-10">
@@ -20,7 +22,8 @@
                      <img src="https://demo.ayroui.com/templates/business-template/assets/images/video/video-bg.png"
                          :src="video.bgvideo.data" class="rounded-lg w-full object-cover" alt="Shoes" />
                      <div class="absolute left-1/2 top-1/3 lg:top-52">
-                         <a href="https://www.youtube.com/watch?v=NX_NW6bt6_s" :href="video.url.data.url" class="glightbox"><button
+                         <a href="https://www.youtube.com/watch?v=NX_NW6bt6_s" :href="video.url.data.url"
+                             class="glightbox"><button
                                  class="btn btn-outline btn-circle text-blue-700  bg-white   text-sm p-3.5 hover:bg-blue-700 hover:border-white">
                                  <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"

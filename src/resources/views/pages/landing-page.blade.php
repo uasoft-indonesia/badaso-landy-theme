@@ -1,5 +1,9 @@
 @extends('landy-theme::layout.index')
+@section('title')
+{{$title}}
+@endsection
 @section('mainContent')
+
     @include('landy-theme::components.landy-landingpage-content')
     @include('landy-theme::components.landy-story-content')
     @include('landy-theme::components.landy-service-content')

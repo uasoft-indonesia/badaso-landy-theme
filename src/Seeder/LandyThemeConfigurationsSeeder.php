@@ -23,8 +23,8 @@ class LandyThemeConfigurationsSeeder extends Seeder
         try {
             $settings = [
                 0 => [
-                    'key'          => 'landyThemeNavbarTitle',
-                    'display_name' => 'Navigation Bar Title',
+                    'key'          => 'landyThemeSiteTitle',
+                    'display_name' => 'Site Title',
                     'value'        => 'Landy Theme',
                     'details'      => '',
                     'type'         => 'text',
@@ -33,37 +33,36 @@ class LandyThemeConfigurationsSeeder extends Seeder
                     'can_delete'   => 0,
                 ],
                 1 => [
-                    'key'          => 'landyThemePrefixUrl',
-                    'display_name' => 'Landy Theme prefix URL',
-                    'value'        => '',
+                    'key'          => 'landyThemeFavicon',
+                    'display_name' => 'Favicon Website',
+                    'value'        => 'photos/1/favicon.png',
                     'details'      => '',
-                    'type'         => 'text',
+                    'type'         => 'upload_image',
                     'order'        => 2,
                     'group'        => 'landyTheme',
                     'can_delete'   => 0,
-
                 ],
                 2 => [
-                    'key'          => 'landyThemeIcon',
-                    'display_name' => 'Icon Theme',
-                    'value'        => 'photos/1/full-logo-badaso.png',
+                    'key'          => 'landyThemeNavbarIcon',
+                    'display_name' => 'Navbar Icon Theme',
+                    'value'        => 'photos/1/Full-logo-badaso-1.png',
                     'details'      => '',
                     'type'         => 'upload_image',
                     'order'        => 3,
                     'group'        => 'landyTheme',
                     'can_delete'   => 0,
-
                 ],
                 3 => [
-                    'key'          => 'landyThemeIconFooter',
-                    'display_name' => 'Icon Theme Footer',
+                    'key'          => 'landyThemeFooterIcon',
+                    'display_name' => 'Footer Icon Theme',
                     'value'        => 'photos/1/full-logo-badaso.png',
                     'details'      => '',
                     'type'         => 'upload_image',
                     'order'        => 4,
-                    'group'        => 'menitTheme',
+                    'group'        => 'landyTheme',
                     'can_delete'   => 0,
                 ],
+
             ];
 
             foreach ($settings as $key => $value) {

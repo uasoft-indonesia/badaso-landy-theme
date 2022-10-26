@@ -1,19 +1,21 @@
  <div class="bg-white">
-     <div class="container lg:mx-auto max-w-[1280px] w-full">
-         <div class="flex justify-center pt-15 lg:pt-28 mb-5">
-             <div class="rounded-full border-2 border-blue-700 p-1 px-8">
-                 <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="review.title.data"></span>
+     <div class="container lg:mx-auto max-w-[1280px] w-full pt-12 pb-12 lg:pt-[100px] lg:pb-[100px] px-4">
+         <div class="flex flex-col max-w-[820px] w-full items-center justify-center mx-auto space-y-5 mb-7">
+             <div class="flex">
+                 <div class="rounded-full border-2 border-blue-700 p-1 px-8">
+                     <span class="font-semibold text-sm lg:text-base text-blue-700" x-text="review.title.data"></span>
+                 </div>
+             </div>
+             <div class="flex">
+                 <span class="text-3xl lg:text-4xl font-bold text-center" x-text="review.subtitle.data"></span>
+             </div>
+             <div class="flex">
+                 <span class="text-center text-sm lg:text-base text-gray-500" x-text="review.description.data">
+                 </span>
              </div>
          </div>
-         <div class="flex justify-center mb-5">
-             <span class="text-3xl lg:text-4xl font-bold text-center" x-text="review.subtitle.data"></span>
-         </div>
-         <div class="flex justify-center mb-10 mx-5 lg:mx-96">
-             <span class="text-center text-sm lg:text-base text-gray-500" x-text="review.description.data">
-             </span>
-         </div>
 
-         <div class="carousel carousel-center   p-4 space-x-4  rounded-box pb-20 lg:pb-40">
+         <div class="carousel carousel-center   p-4 space-x-4  rounded-box">
              <template x-for="list in review.list.data">
                  <div class="carousel-item bg-slate-50 w-full lg:w-1/2 rounded-md">
                      <div class="card  ">
@@ -26,13 +28,14 @@
                              </svg>
                          </div>
                          <div class="card-body">
-                                 <span x-text="list.content.data" class="text-ellipsis overflow-hidden w-30">
-                                 </span>
+                             <span x-text="list.content.data" class="text-ellipsis overflow-hidden w-30">
+                             </span>
 
                              <div class="flex flex-row ">
                                  <div class="avatar">
                                      <div class="w-16 rounded-full">
-                                         <img src="https://placeimg.com/192/192/people" :src="list.avatar.data" class="object-cover" />
+                                         <img src="https://placeimg.com/192/192/people" :src="list.avatar.data"
+                                             class="object-cover" />
                                      </div>
                                  </div>
 

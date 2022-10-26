@@ -8,12 +8,22 @@ use Illuminate\Support\Facades\Mail;
 use Uasoft\Badaso\Helpers\ApiResponse;
 use Uasoft\Badaso\Theme\LandyTheme\Mail\SendEmail;
 use Uasoft\Badaso\Theme\LandyTheme\Mail\SubsribeMail;
+use Uasoft\Badaso\Theme\LandyTheme\Helpers\Configurations;
 
 class HomeController extends Controller
 {
+    public $prefix = 'badaso.theme.landy-theme';
+
     public function index()
     {
-        return view('landy-theme::pages.landing-page');
+        $config = Configurations::index();
+        $title = $config->siteTitle;
+
+        $view = 'landy-theme::pages.landing-page';
+        if (view()->exists($this->prefix . '.pages.landing-page')) {
+            $view = $this->prefix . '.pages.landing-page';
+        };
+        return view($view, ['title' => $title]);
     }
 
     public function sendEmail(Request $request)

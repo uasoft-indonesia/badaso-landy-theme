@@ -199,54 +199,73 @@ class LandyThemeContentsSeeder extends Seeder
                             }
                         ]
                     },
-                    "tabs": {
-                        "name": "tabs",
-                        "label": "About Tabs",
-                        "type": "array",
-                        "data": [
-                            {
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title",
-                                    "type": "text",
-                                    "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description",
-                                    "type": "text",
-                                    "data": "There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour."
-                                }
+                    "contenttab": {
+                        "name": "contenttab",
+                        "label": "Content Tab",
+                        "type": "group",
+                        "data": {
+                            "content1": {
+                                "name": "content1",
+                                "label": "Content 1",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "textcontent": {
+                                            "name": "textcontent",
+                                            "label": "Text Content",
+                                            "type": "text",
+                                            "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
+                                        }
+                                    },
+                                    {
+                                        "textcontent": {
+                                            "name": "textcontent",
+                                            "label": "Text Content",
+                                            "type": "text",
+                                            "data": "There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour."
+                                        }
+                                    }
+                                ]
                             },
-                            {
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title",
-                                    "type": "text",
-                                    "data": null
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description",
-                                    "type": "text",
-                                    "data": "There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour."
-                                }
+                            "content2": {
+                                "name": "content2",
+                                "label": "Content 2",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "textcontent": {
+                                            "name": "textcontent",
+                                            "label": "Text Content",
+                                            "type": "text",
+                                            "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
+                                        }
+                                    },
+                                    {
+                                        "textcontent": {
+                                            "name": "textcontent",
+                                            "label": "Text Content",
+                                            "type": "text",
+                                            "data": "There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour."
+                                        }
+                                    }
+                                ]
                             },
-                            {
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title",
-                                    "type": "text",
-                                    "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description",
-                                    "type": "text",
-                                    "data": null
-                                }
+                            "content3": {
+                                "name": "content3",
+                                "label": "Content 3",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "textcontent": {
+                                            "name": "textcontent",
+                                            "label": "Text Content",
+                                            "type": "text",
+                                            "data": "It is a long established fact that a reader will be distracted by the readable content  of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English."
+                                        }
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
                 }
             },
@@ -465,132 +484,394 @@ class LandyThemeContentsSeeder extends Seeder
                         "type": "text",
                         "data": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
                     },
-                    "portfoliolist": {
-                        "name": "portfoliolist",
-                        "label": "Portfolio List",
+                    "titletab": {
+                        "name": "titletab",
+                        "label": "Title Tab",
                         "type": "array",
                         "data": [
                             {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf1.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
+                                "texttitle": {
+                                    "name": "texttitle",
+                                    "label": "Text Title",
                                     "type": "text",
-                                    "data": "Graphics Design"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                    "data": "All Work"
                                 }
                             },
                             {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf2.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
+                                "texttitle": {
+                                    "name": "texttitle",
+                                    "label": "Text Title",
                                     "type": "text",
-                                    "data": "Web Development"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                    "data": "Branding"
                                 }
                             },
                             {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf3.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
+                                "texttitle": {
+                                    "name": "texttitle",
+                                    "label": "Text Title",
                                     "type": "text",
-                                    "data": "App Development"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                    "data": "Marketing"
                                 }
                             },
                             {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf2.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
+                                "texttitle": {
+                                    "name": "texttitle",
+                                    "label": "Text Title",
                                     "type": "text",
-                                    "data": "Digital Marketing"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                    "data": "Planning"
                                 }
                             },
                             {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf1.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
+                                "texttitle": {
+                                    "name": "texttitle",
+                                    "label": "Text Title",
                                     "type": "text",
-                                    "data": "SEO Services"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
-                                }
-                            },
-                            {
-                                "image": {
-                                    "name": "image",
-                                    "label": "Image Project",
-                                    "type": "image",
-                                    "data": "photos/1/pf3.jpeg"
-                                },
-                                "title": {
-                                    "name": "title",
-                                    "label": "Title Project",
-                                    "type": "text",
-                                    "data": "Product Design"
-                                },
-                                "description": {
-                                    "name": "description",
-                                    "label": "Description Project",
-                                    "type": "text",
-                                    "data": "Short description for the ones who look for something new. Awesome!"
+                                    "data": "Research"
                                 }
                             }
                         ]
+                    },
+                    "contenttab": {
+                        "name": "contenttab",
+                        "label": "Content Tab",
+                        "type": "group",
+                        "data": {
+                            "contenttab1": {
+                                "name": "contenttab1",
+                                "label": "Content Tab 1",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf1.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Graphics Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf2.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Web Development"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf3.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Product Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf2.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Digital Marketing"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf3.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Product Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf1.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "SEO Services"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    }
+                                ]
+                            },
+                            "contenttab2": {
+                                "name": "contenttab2",
+                                "label": "Content Tab 2",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf2.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "SEO Services"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf3.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Product Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf1.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Web Development"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    }
+                                ]
+                            },
+                            "contenttab3": {
+                                "name": "contenttab3",
+                                "label": "Content Tab 3",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf4.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Product Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf5.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Web Development"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf6.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "SEO Services"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    }
+                                ]
+                            },
+                            "contenttab4": {
+                                "name": "contenttab4",
+                                "label": "Content Tab 4",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf6.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "SEO Services"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    },
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf2.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Product Design"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    }
+                                ]
+                            },
+                            "contenttab5": {
+                                "name": "contenttab5",
+                                "label": "Content Tab 5",
+                                "type": "array",
+                                "data": [
+                                    {
+                                        "imagecontent": {
+                                            "name": "imagecontent",
+                                            "label": "Image Content",
+                                            "type": "image",
+                                            "data": "photos/1/pf4.jpeg"
+                                        },
+                                        "headingcontent": {
+                                            "name": "headingcontent",
+                                            "label": "Heading Content",
+                                            "type": "text",
+                                            "data": "Web Development"
+                                        },
+                                        "descriptioncontent": {
+                                            "name": "descriptioncontent",
+                                            "label": "Description Content",
+                                            "type": "text",
+                                            "data": "Short description for the ones who look for something new. Awesome!"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 }
             },
@@ -1138,6 +1419,48 @@ class LandyThemeContentsSeeder extends Seeder
                                     "label": "Title Logo",
                                     "type": "text",
                                     "data": "IDCloudHost"
+                                }
+                            },
+                            {
+                                "logo": {
+                                    "name": "logo",
+                                    "label": "Client Logo",
+                                    "type": "image",
+                                    "data": "photos/1/google-cloud.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Google Cloud"
+                                }
+                            },
+                            {
+                                "logo": {
+                                    "name": "logo",
+                                    "label": "Client Logo",
+                                    "type": "image",
+                                    "data": "photos/1/alibaba.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Alibaba Cloud"
+                                }
+                            },
+                            {
+                                "logo": {
+                                    "name": "logo",
+                                    "label": "Client Logo",
+                                    "type": "image",
+                                    "data": "photos/1/digital-ocean.png"
+                                },
+                                "title": {
+                                    "name": "title",
+                                    "label": "Title Logo",
+                                    "type": "text",
+                                    "data": "Digital Ocean"
                                 }
                             }
                         ]
