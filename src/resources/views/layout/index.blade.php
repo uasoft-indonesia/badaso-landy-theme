@@ -8,7 +8,6 @@
 <body>
     {{-- @include('landy-theme::components.landy-scrolltop') --}}
     <div class="splash">
-        {{-- <span class="fade-in">welcome</span> --}}
         <progress class="progress progress-info  w-56"></progress>
     </div>
 
