@@ -71,7 +71,6 @@ class LandyThemeSetup extends Command
 
         // Badaso Landy Theme
              mix.js("vendor/badaso/landy-theme/src/resources/js/app.js", "public/js/landy-theme.js")
-             .js("vendor/badaso/landy-theme/src/resources/js/index/landy-theme.js", "public/js/index/landy-theme.js")
         .css("vendor/badaso/landy-theme/src/resources/js/assets/css/style.css","public/css/landy-theme.css",{},[
         require("tailwindcss")('./tailwind-landy.config.js'),
         require("autoprefixer"),
@@ -139,6 +138,7 @@ class LandyThemeSetup extends Command
         $decoded_json['dependencies']['daisyui'] = '^2.13.6';
         $decoded_json['dependencies']['alpinejs'] = '^3.10.2';
         $decoded_json['dependencies']['tailwindcss'] = '^3.0.23';
+        $decoded_json['dependencies']['@tailwindcss/aspect-ratio'] = '^0.2.2';
         $encoded_json = json_encode($decoded_json, JSON_PRETTY_PRINT);
         file_put_contents(base_path('package.json'), $encoded_json);
 

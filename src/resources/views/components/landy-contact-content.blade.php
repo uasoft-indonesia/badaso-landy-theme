@@ -1,6 +1,6 @@
  <div class="bg-white" id="Contact">
-     <div class="container lg:mx-auto max-w-[1280px] w-full">
-         <div class="grid grid-cols-1 lg:grid-cols-12 mt-10 px-4 lg:gap-6">
+     <div class="container lg:mx-auto max-w-[1280px] w-full pt-12 pb-12 lg:pt-[100px] lg:pb-[100px]">
+         <div class="grid grid-cols-1 lg:grid-cols-12 px-4 lg:gap-6">
              <div class="col-span-4 mb-4">
                  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
                      <template x-for="datacontact in contact.list.data">

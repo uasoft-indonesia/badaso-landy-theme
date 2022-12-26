@@ -250,7 +250,7 @@ export default {
       get() {
         return [
           {
-            label: 'landy Theme Configuration',
+            label: 'Landy Theme Configuration',
             value: 'landyTheme'
           }
         ]
