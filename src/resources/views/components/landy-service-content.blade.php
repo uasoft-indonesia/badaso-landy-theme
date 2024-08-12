@@ -14,7 +14,7 @@
              </div>
          </div>
 
-         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 z-0">
              <template x-for="data in listservice">
                  <div
                      class="bg-white  rounded-lg  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:shadow-md  duration-300 border border-slate-200 p-8">

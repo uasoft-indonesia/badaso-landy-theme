@@ -1,4 +1,4 @@
- <div class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content pl-8">
+ <div class="menu p-4 overflow-y-auto min-h-full w-64 lg:w-80 bg-base-100 text-base-content p-4">
 
      <div class="mt-5 lg:mt-10 mb-5">
          <a href=""><img src="https://badaso-docs.uatech.co.id/img/full-logo-badaso.png" :src="sidebar.logo.data"

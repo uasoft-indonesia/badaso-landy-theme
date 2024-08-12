@@ -15,10 +15,10 @@
              </div>
          </div>
 
-         <div class="carousel carousel-center   p-4 space-x-4  rounded-box">
+         <div class="carousel carousel-center  p-4 space-x-4  rounded-box w-full">
              <template x-for="list in review.list.data">
-                 <div class="carousel-item bg-slate-50 w-full lg:w-1/2 rounded-md">
-                     <div class="card  ">
+                 <div class="carousel-item bg-slate-50 lg:w-1/2 md:w-1/2 sm:w-full rounded-md">
+                     <div class="card">
                          <div class="ml-8">
                              <svg class="shape1" width="62" height="31" viewBox="0 0 62 31" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
                              </svg>
                          </div>
                          <div class="card-body">
-                             <span x-text="list.content.data" class="text-ellipsis overflow-hidden w-30">
+                             <span x-html="list.content.data" class="text-ellipsis overflow-hidden w-30">
                              </span>
 
                              <div class="flex flex-row ">
@@ -41,17 +41,13 @@
 
                                  <div class="self-center px-4">
                                      <p class="font-bold" x-text="list.name.data"></p>
-                                     <p x-text="list.position.data"></p>
+                                     <span x-html="list.position.data"></span>
                                  </div>
                              </div>
                          </div>
                      </div>
-
                  </div>
              </template>
-
          </div>
-
-
      </div>
  </div>
