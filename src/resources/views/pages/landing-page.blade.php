@@ -13,7 +13,7 @@
     @include('landy-theme::components.landy-team-content')
     @include('landy-theme::components.landy-call-action-content')
     @include('landy-theme::components.landy-review-content')
-    @include('landy-theme::components.landy-news-content')
+    {{-- @include('landy-theme::components.landy-news-content') --}}
     @include('landy-theme::components.landy-client-content')
     @include('landy-theme::components.landy-contact-content')
     <!-- Maps -->
