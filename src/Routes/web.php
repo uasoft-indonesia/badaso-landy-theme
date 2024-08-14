@@ -11,8 +11,5 @@ Route::prefix($landy_route_prefix)
     ->as('badaso.landy-theme.')
     ->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/test', [HomeController::class, 'gettest'])->name('test');
-
-
     });
 

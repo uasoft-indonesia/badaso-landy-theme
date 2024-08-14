@@ -18,8 +18,8 @@
     @include('landy-theme::components.landy-contact-content')
     <!-- Maps -->
     <div class="container mx-auto w-full mb-20">
-        <div class="flex justify-center pt-10 lg:pt-20">
-            <div id="googleMap" class=" w-full h-52 lg:h-[512px]"></div>
+        <div class="flex justify-center pt-10 lg:pt-20 mx-4">
+            <div id="googleMap" class="w-full h-52 lg:h-[512px]"></div>
         </div>
     </div>
     @include('landy-theme::components.landy-footer')

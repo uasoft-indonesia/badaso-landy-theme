@@ -2,7 +2,7 @@
      <div class="container lg:mx-auto max-w-[1280px] w-full grid-cols-1 divide-y px-4">
 
          <div class="grid lg:grid-cols-12 pt-20 lg:pt-28 pr-4 pb-20">
-             <div class="col-span-6 z-20">
+             <div class="col-span-6">
                  <div class="lg:max-w-[576px] lg:h-[562px] mb-16 lg:mb-0">
                      <a href=""><img
                              src="https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg"
